@@ -1,0 +1,523 @@
+{
+	"version" : 1,
+	"platform" : "3.2.2",
+	"metadata" : {
+		"appmode" : "shiny",
+		"primary_rmd" : null,
+		"primary_html" : null,
+		"content_category" : null
+	},
+	"packages" : {
+		"shiny" : {
+			"description" : {
+				"Package" : "shiny",
+				"Type" : "Package",
+				"Title" : "Web Application Framework for R",
+				"Version" : "0.12.2",
+				"Date" : "2015-08-04",
+				"Authors@R" : "c(\n    person(\"Winston\", \"Chang\", role = c(\"aut\", \"cre\"), email = \"winston@rstudio.com\"),\n    person(\"Joe\", \"Cheng\", role = \"aut\", email = \"joe@rstudio.com\"),\n    person(\"JJ\", \"Allaire\", role = \"aut\", email = \"jj@rstudio.com\"),\n    person(\"Yihui\", \"Xie\", role = \"aut\", email = \"yihui@rstudio.com\"),\n    person(\"Jonathan\", \"McPherson\", role = \"aut\", email = \"jonathan@rstudio.com\"),\n    person(family = \"RStudio\", role = \"cph\"),\n    person(family = \"jQuery Foundation\", role = \"cph\",\n    comment = \"jQuery library and jQuery UI library\"),\n    person(family = \"jQuery contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"jQuery library; authors listed in inst/www/shared/jquery-AUTHORS.txt\"),\n    person(family = \"jQuery UI contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"jQuery UI library; authors listed in inst/www/shared/jqueryui/1.10.4/AUTHORS.txt\"),\n    person(\"Mark\", \"Otto\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(\"Jacob\", \"Thornton\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(family = \"Bootstrap contributors\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(family = \"Twitter, Inc\", role = \"cph\",\n    comment = \"Bootstrap library\"),\n    person(\"Alexander\", \"Farkas\", role = c(\"ctb\", \"cph\"),\n    comment = \"html5shiv library\"),\n    person(\"Scott\", \"Jehl\", role = c(\"ctb\", \"cph\"),\n    comment = \"Respond.js library\"),\n    person(\"Stefan\", \"Petre\", role = c(\"ctb\", \"cph\"),\n    comment = \"Bootstrap-datepicker library\"),\n    person(\"Andrew\", \"Rowls\", role = c(\"ctb\", \"cph\"),\n    comment = \"Bootstrap-datepicker library\"),\n    person(\"Dave\", \"Gandy\", role = c(\"ctb\", \"cph\"),\n    comment = \"Font-Awesome font\"),\n    person(\"Brian\", \"Reavis\", role = c(\"ctb\", \"cph\"),\n    comment = \"selectize.js library\"),\n    person(\"Kristopher Michael\", \"Kowal\", role = c(\"ctb\", \"cph\"),\n    comment = \"es5-shim library\"),\n    person(family = \"es5-shim contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"es5-shim library\"),\n    person(\"Denis\", \"Ineshin\", role = c(\"ctb\", \"cph\"),\n    comment = \"ion.rangeSlider library\"),\n    person(\"Sami\", \"Samhuri\", role = c(\"ctb\", \"cph\"),\n    comment = \"Javascript strftime library\"),\n    person(family = \"SpryMedia Limited\", role = c(\"ctb\", \"cph\"),\n    comment = \"DataTables library\"),\n    person(\"John\", \"Fraser\", role = c(\"ctb\", \"cph\"),\n    comment = \"showdown.js library\"),\n    person(\"John\", \"Gruber\", role = c(\"ctb\", \"cph\"),\n    comment = \"showdown.js library\"),\n    person(\"Ivan\", \"Sagalaev\", role = c(\"ctb\", \"cph\"),\n    comment = \"highlight.js library\"),\n    person(family = \"R Core Team\", role = c(\"ctb\", \"cph\"),\n    comment = \"tar implementation from R\")\n    )",
+				"Description" : "Makes it incredibly easy to build interactive web\n    applications with R. Automatic \"reactive\" binding between inputs and\n    outputs and extensive pre-built widgets make it possible to build\n    beautiful, responsive, and powerful applications with minimal effort.",
+				"License" : "GPL-3 | file LICENSE",
+				"Depends" : "R (>= 3.0.0), methods",
+				"Imports" : "utils, httpuv (>= 1.3.3), mime (>= 0.3), jsonlite (>= 0.9.16),\nxtable, digest, htmltools (>= 0.2.6), R6 (>= 2.0)",
+				"Suggests" : "datasets, Cairo (>= 1.5-5), testthat, knitr (>= 1.6),\nmarkdown, ggplot2",
+				"URL" : "http://shiny.rstudio.com",
+				"BugReports" : "https://github.com/rstudio/shiny/issues",
+				"Collate" : "'app.R' 'bootstrap-layout.R' 'map.R' 'globals.R' 'utils.R'\n'bootstrap.R' 'cache.R' 'fileupload.R' 'stack.R' 'graph.R'\n'hooks.R' 'html-deps.R' 'htmltools.R' 'image-interact-opts.R'\n'image-interact.R' 'imageutils.R' 'input-action.R'\n'input-checkbox.R' 'input-checkboxgroup.R' 'input-date.R'\n'input-daterange.R' 'input-file.R' 'input-numeric.R'\n'input-password.R' 'input-radiobuttons.R' 'input-select.R'\n'input-slider.R' 'input-submit.R' 'input-text.R'\n'input-utils.R' 'jqueryui.R' 'middleware-shiny.R'\n'middleware.R' 'priorityqueue.R' 'progress.R' 'react.R'\n'reactive-domains.R' 'reactives.R' 'render-plot.R' 'run-url.R'\n'server-input-handlers.R' 'server.R' 'shiny.R' 'shinyui.R'\n'shinywrappers.R' 'showcase.R' 'tar.R' 'timer.R'\n'update-input.R'",
+				"NeedsCompilation" : "no",
+				"Packaged" : "2015-08-05 16:04:49 UTC; winston",
+				"Author" : "Winston Chang [aut, cre],\n  Joe Cheng [aut],\n  JJ Allaire [aut],\n  Yihui Xie [aut],\n  Jonathan McPherson [aut],\n  RStudio [cph],\n  jQuery Foundation [cph] (jQuery library and jQuery UI library),\n  jQuery contributors [ctb, cph] (jQuery library; authors listed in\n    inst/www/shared/jquery-AUTHORS.txt),\n  jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in\n    inst/www/shared/jqueryui/1.10.4/AUTHORS.txt),\n  Mark Otto [ctb] (Bootstrap library),\n  Jacob Thornton [ctb] (Bootstrap library),\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Alexander Farkas [ctb, cph] (html5shiv library),\n  Scott Jehl [ctb, cph] (Respond.js library),\n  Stefan Petre [ctb, cph] (Bootstrap-datepicker library),\n  Andrew Rowls [ctb, cph] (Bootstrap-datepicker library),\n  Dave Gandy [ctb, cph] (Font-Awesome font),\n  Brian Reavis [ctb, cph] (selectize.js library),\n  Kristopher Michael Kowal [ctb, cph] (es5-shim library),\n  es5-shim contributors [ctb, cph] (es5-shim library),\n  Denis Ineshin [ctb, cph] (ion.rangeSlider library),\n  Sami Samhuri [ctb, cph] (Javascript strftime library),\n  SpryMedia Limited [ctb, cph] (DataTables library),\n  John Fraser [ctb, cph] (showdown.js library),\n  John Gruber [ctb, cph] (showdown.js library),\n  Ivan Sagalaev [ctb, cph] (highlight.js library),\n  R Core Team [ctb, cph] (tar implementation from R)",
+				"Maintainer" : "Winston Chang <winston@rstudio.com>",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-08-05 20:05:39",
+				"Built" : "R 3.2.2; ; 2015-11-19 19:49:43 UTC; unix"
+			}
+		},
+		"dplyr" : {
+			"description" : {
+				"Package" : "dplyr",
+				"Type" : "Package",
+				"Version" : "0.4.3",
+				"Title" : "A Grammar of Data Manipulation",
+				"Description" : "A fast, consistent tool for working with data frame like objects,\n    both in memory and out of memory.",
+				"Authors@R" : "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", c(\"aut\", \"cre\")),\n    person(\"Romain\", \"Francois\", , \"romain@r-enthusiasts.com\", role = \"aut\"),\n    person(\"RStudio\", role = \"cph\")\n    )",
+				"URL" : "https://github.com/hadley/dplyr",
+				"BugReports" : "https://github.com/hadley/dplyr/issues",
+				"Depends" : "R (>= 3.1.2)",
+				"Imports" : "assertthat, utils, R6, Rcpp, magrittr, lazyeval (>= 0.1.10),\nDBI (>= 0.3)",
+				"Suggests" : "RSQLite (>= 1.0.0), RMySQL, RPostgreSQL, data.table,\ntestthat, knitr, microbenchmark, ggplot2, mgcv, Lahman (>=\n3.0-1), nycflights13, methods",
+				"VignetteBuilder" : "knitr",
+				"LazyData" : "yes",
+				"LinkingTo" : "Rcpp (>= 0.12.0), BH (>= 1.58.0-1)",
+				"License" : "MIT + file LICENSE",
+				"Collate" : "'RcppExports.R' 'all-equal.r' 'bench-compare.r' 'chain.r'\n'cluster.R' 'colwise.R' 'compute-collect.r' 'copy-to.r'\n'data-lahman.r' 'data-nasa.r' 'data-nycflights13.r'\n'data-temp.r' 'data.r' 'dataframe.R' 'dbi-s3.r' 'desc.r'\n'distinct.R' 'do.r' 'dplyr.r' 'explain.r' 'failwith.r'\n'frame-data.R' 'funs.R' 'glimpse.R' 'group-by.r'\n'group-indices.R' 'group-size.r' 'grouped-df.r' 'grouped-dt.r'\n'id.r' 'inline.r' 'join.r' 'lead-lag.R' 'location.R' 'manip.r'\n'nth-value.R' 'order-by.R' 'over.R' 'partial-eval.r'\n'progress.R' 'query.r' 'rank.R' 'rbind.r' 'rowwise.r'\n'sample.R' 'select-utils.R' 'select-vars.R' 'sets.r'\n'sql-escape.r' 'sql-star.r' 'src-local.r' 'src-mysql.r'\n'src-postgres.r' 'src-sql.r' 'src-sqlite.r' 'src.r' 'tally.R'\n'tbl-cube.r' 'tbl-df.r' 'tbl-dt.r' 'tbl-sql.r' 'tbl.r'\n'top-n.R' 'translate-sql-helpers.r' 'translate-sql-base.r'\n'translate-sql-window.r' 'translate-sql.r' 'type-sum.r'\n'utils-dt.R' 'utils-format.r' 'utils.r' 'view.r' 'zzz.r'",
+				"NeedsCompilation" : "yes",
+				"Packaged" : "2015-08-31 18:19:11 UTC; hadley",
+				"Author" : "Hadley Wickham [aut, cre],\n  Romain Francois [aut],\n  RStudio [cph]",
+				"Maintainer" : "Hadley Wickham <hadley@rstudio.com>",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-09-01 18:15:02",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-11-19 20:02:15 UTC; unix"
+			}
+		},
+		"stringdist" : {
+			"description" : {
+				"Package" : "stringdist",
+				"Maintainer" : "Mark van der Loo <mark.vanderloo@gmail.com>",
+				"License" : "GPL-3",
+				"Title" : "Approximate String Matching and String Distance Functions",
+				"LazyData" : "no",
+				"Type" : "Package",
+				"LazyLoad" : "yes",
+				"Authors@R" : "c( person(\"Mark\", \"van der Loo\", role=c(\"aut\",\"cre\"),email=\"mark.vanderloo@gmail.com\")\n            , person(\"Jan\", \"van der Laan\", role=\"ctb\"),person(\"R Core Team\",\"\",role=c(\"ctb\")),person(\"Nick\",\"Logan\",role=\"ctb\"))",
+				"Description" : "Implements an approximate string matching version of R's native\n     'match' function. Can calculate various string distances based on edits\n     (damerau-levenshtein, hamming, levenshtein, optimal sting alignment), qgrams\n     (q-gram, cosine, jaccard distance) or heuristic metrics (jaro, jaro-winkler).\n     An implementation of soundex is provided as well. Distances can be computed\n     between character vectors while taking proper care of encoding or between\n     integer vectors representing generic sequences.",
+				"Version" : "0.9.4",
+				"Depends" : "R (>= 2.15.3)",
+				"Imports" : "parallel",
+				"URL" : "https://github.com/markvanderloo/stringdist",
+				"BugReports" : "https://github.com/markvanderloo/stringdist/issues",
+				"Date" : "2015-06-23",
+				"Suggests" : "testthat",
+				"NeedsCompilation" : "yes",
+				"Packaged" : "2015-10-26 08:53:20 UTC; mark",
+				"Author" : "Mark van der Loo [aut, cre],\n  Jan van der Laan [ctb],\n  R Core Team [ctb],\n  Nick Logan [ctb]",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-10-26 15:58:56",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-11-20 01:56:38 UTC; unix"
+			}
+		},
+		"networkD3" : {
+			"description" : {
+				"Package" : "networkD3",
+				"Type" : "Package",
+				"Title" : "D3 JavaScript Network Graphs from R",
+				"Description" : "Creates 'D3' 'JavaScript' network, tree, dendrogram, and Sankey\n    graphs from 'R'.",
+				"Version" : "0.2.6",
+				"Date" : "2015-10-09",
+				"Authors@R" : "c(\n    person(\"Christopher\", \"Gandrud\", email = \"christopher.gandrud@gmail.com\",\n    role = c(\"aut\", \"cre\")),\n    person(\"J.J.\", \"Allaire\", role = \"aut\"),\n    person(\"Kenton\", \"Russell\", role = \"aut\"),\n    person(\"B.W.\", \"Lewis\", role = \"ctb\"),\n    person(\"Kevin\", \"Kuo\", role = \"ctb\"),\n    person(\"Charles\", \"Sese\", role = \"ctb\"),\n    person(\"Peter\", \"Ellis\", role = \"ctb\"),\n    person(\"Jonathan\", \"Owen\", role = \"ctb\"),\n    person(\"Jennifer\",\"Rogers\", role = \"ctb\")\n    )",
+				"URL" : "http://cran.r-project.org/package=networkD3",
+				"BugReports" : "https://github.com/christophergandrud/networkD3/issues",
+				"License" : "GPL (>= 3)",
+				"Depends" : "R (>= 3.0.0)",
+				"Imports" : "htmlwidgets (>= 0.3.2)",
+				"Suggests" : "htmltools (>= 0.2.6), jsonlite",
+				"Enhances" : "knitr, shiny",
+				"NeedsCompilation" : "no",
+				"Packaged" : "2015-10-11 08:32:21 UTC; christophergandrud",
+				"Author" : "Christopher Gandrud [aut, cre],\n  J.J. Allaire [aut],\n  Kenton Russell [aut],\n  B.W. Lewis [ctb],\n  Kevin Kuo [ctb],\n  Charles Sese [ctb],\n  Peter Ellis [ctb],\n  Jonathan Owen [ctb],\n  Jennifer Rogers [ctb]",
+				"Maintainer" : "Christopher Gandrud <christopher.gandrud@gmail.com>",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-10-11 10:47:35",
+				"Built" : "R 3.2.2; ; 2015-11-20 05:30:13 UTC; unix"
+			}
+		},
+		"methods" : {
+			"description" : {
+				"Package" : "methods",
+				"Version" : "3.2.2",
+				"Priority" : "base",
+				"Imports" : "utils",
+				"Title" : "Formal Methods and Classes",
+				"Author" : "R Core Team",
+				"Maintainer" : "R Core Team <R-core@r-project.org>",
+				"Description" : "Formally defined methods and classes for R objects,\n  plus other programming tools, as described in the reference.",
+				"References" : "John M. Chambers (2008)\n``Software for Data Analysis: Programming with R''; Springer NY.",
+				"License" : "Part of R 3.2.2",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-08-14 19:31:53 UTC; unix"
+			}
+		},
+		"utils" : {
+			"description" : {
+				"Package" : "utils",
+				"Version" : "3.2.2",
+				"Priority" : "base",
+				"Title" : "The R Utils Package",
+				"Author" : "R Core Team and contributors worldwide",
+				"Maintainer" : "R Core Team <R-core@r-project.org>",
+				"Description" : "R utility functions.",
+				"License" : "Part of R 3.2.2",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-08-14 19:30:27 UTC; unix"
+			}
+		},
+		"httpuv" : {
+			"description" : {
+				"Package" : "httpuv",
+				"Type" : "Package",
+				"Title" : "HTTP and WebSocket Server Library",
+				"Version" : "1.3.3",
+				"Date" : "2015-08-03",
+				"Author" : "RStudio, Inc.",
+				"Copyright" : "RStudio, Inc.; Joyent, Inc.; Nginx Inc.; Igor Sysoev; Niels\nProvos; Internet Systems Consortium, Inc.; Alexander Chemeris",
+				"Maintainer" : "Joe Cheng <joe@rstudio.com>",
+				"Description" : "Provides low-level socket and protocol support for handling\n    HTTP and WebSocket requests directly from within R. It is primarily\n    intended as a building block for other packages, rather than making it\n    particularly easy to create complete web applications using httpuv alone.\n    httpuv is built on top of the libuv and http-parser C libraries, both of\n    which were developed by Joyent, Inc. (See LICENSE file for libuv and\n    http-parser license information.)",
+				"License" : "GPL-3 | file LICENSE",
+				"Depends" : "R (>= 2.15.1), methods",
+				"Imports" : "Rcpp (>= 0.11.0), utils",
+				"LinkingTo" : "Rcpp",
+				"URL" : "https://github.com/rstudio/httpuv",
+				"SystemRequirements" : "GNU make",
+				"NeedsCompilation" : "yes",
+				"Packaged" : "2015-08-03 18:49:59 UTC; jcheng",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-08-04 00:32:50",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-11-20 12:08:37 UTC; unix"
+			}
+		},
+		"mime" : {
+			"description" : {
+				"Package" : "mime",
+				"Type" : "Package",
+				"Title" : "Map Filenames to MIME Types",
+				"Version" : "0.4",
+				"Date" : "2015-09-03",
+				"Authors@R" : "c(person(\"Jeffrey\", \"Horner\", role = \"ctb\"),\n    person(\"Yihui\", \"Xie\", role = c(\"aut\", \"cre\"), email = \"xie@yihui.name\"))",
+				"Maintainer" : "Yihui Xie <xie@yihui.name>",
+				"Description" : "Guesses the MIME type from a filename extension using the data\n    derived from /etc/mime.types in UNIX-type systems.",
+				"Imports" : "tools",
+				"License" : "GPL-2",
+				"URL" : "https://github.com/yihui/mime",
+				"BugReports" : "https://github.com/yihui/mime/issues",
+				"LazyData" : "TRUE",
+				"NeedsCompilation" : "yes",
+				"Packaged" : "2015-09-02 15:25:52 UTC; yihui",
+				"Author" : "Jeffrey Horner [ctb],\n  Yihui Xie [aut, cre]",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-09-03 12:20:19",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-11-19 19:49:06 UTC; unix"
+			}
+		},
+		"jsonlite" : {
+			"description" : {
+				"Package" : "jsonlite",
+				"Version" : "0.9.17",
+				"Title" : "A Robust, High Performance JSON Parser and Generator for R",
+				"License" : "MIT + file LICENSE",
+				"NeedsCompilation" : "yes",
+				"Depends" : "methods",
+				"Author" : "Jeroen Ooms, Duncan Temple Lang, Lloyd Hilaiel",
+				"URL" : "http://arxiv.org/abs/1403.2805,\nhttps://www.opencpu.org/posts/jsonlite-a-smarter-json-encoder",
+				"BugReports" : "http://github.com/jeroenooms/jsonlite/issues",
+				"Maintainer" : "Jeroen Ooms <jeroen.ooms@stat.ucla.edu>",
+				"VignetteBuilder" : "knitr, R.rsp",
+				"Description" : "A fast JSON parser and generator optimized for statistical data\n    and the web. Started out as a fork of 'RJSONIO', but has been completely\n    rewritten in recent versions. The package offers flexible, robust, high\n    performance tools for working with JSON in R and is particularly powerful\n    for building pipelines and interacting with a web API. The implementation is\n    based on the mapping described in the vignette (Ooms, 2014). In addition to\n    converting JSON data from/to R objects, 'jsonlite' contains functions to\n    stream, validate, and prettify JSON data. The unit tests included with the\n    package verify that all edge cases are encoded and decoded consistently for\n    use with dynamic data in systems and applications.",
+				"Suggests" : "curl (>= 0.5), plyr, testthat, knitr, rmarkdown, R.rsp",
+				"Packaged" : "2015-09-06 15:12:14 UTC; jeroen",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-09-06 19:30:57",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-11-19 19:53:41 UTC; unix"
+			}
+		},
+		"xtable" : {
+			"description" : {
+				"Package" : "xtable",
+				"Version" : "1.8-0",
+				"Date" : "2015-10-22",
+				"Title" : "Export Tables to LaTeX or HTML",
+				"Author" : "David B. Dahl <dahl@stat.byu.edu>",
+				"Maintainer" : "David Scott <d.scott@auckland.ac.nz>",
+				"Imports" : "stats, utils",
+				"Suggests" : "knitr",
+				"VignetteBuilder" : "knitr",
+				"Description" : "Coerce data to LaTeX and HTML tables.",
+				"URL" : "http://xtable.r-forge.r-project.org/",
+				"Depends" : "R (>= 2.10.0)",
+				"License" : "GPL (>= 2)",
+				"Repository" : "CRAN",
+				"NeedsCompilation" : "no",
+				"Packaged" : "2015-10-21 10:30:43 UTC; dsco036",
+				"Date/Publication" : "2015-11-02 11:47:44",
+				"Built" : "R 3.2.2; ; 2015-11-19 19:49:10 UTC; unix"
+			}
+		},
+		"digest" : {
+			"description" : {
+				"Package" : "digest",
+				"Version" : "0.6.8",
+				"Date" : "2013-12-30",
+				"Author" : "Dirk Eddelbuettel <edd@debian.org> with contributions \n by Antoine Lucas, Jarek Tuszynski, Henrik Bengtsson, Simon Urbanek,\n Mario Frasca, Bryan Lewis, Murray Stokely, Hannes Muehleisen,\n Duncan Murdoch, Jim Hester and Wush Wu.",
+				"Maintainer" : "Dirk Eddelbuettel <edd@debian.org>",
+				"Title" : "Create Cryptographic Hash Digests of R Objects",
+				"Description" : "Implementation of a function 'digest()' for the creation \n of hash digests of arbitrary R objects (using the md5, sha-1, sha-256, \n crc32, xxhash and murmurhash algorithms) permitting easy comparison of R\n language objects, as well as a function 'hmac()' to create hash-based\n message authentication code.\n\n   The md5 algorithm by Ron Rivest is specified in RFC 1321, the sha-1 \n and sha-256 algorithms are specified in FIPS-180-1 and FIPS-180-2, \n and the crc32 algorithm is described in \n ftp://ftp.rocksoft.com/cliens/rocksoft/papers/crc_v3.txt.\n\n   For md5, sha-1, sha-256 and aes, this package uses small standalone\n implementations that were provided by Christophe Devine. For crc32, code\n from the zlib library is used. For sha-512, an implementation by Aaron\n D. Gifford is used. For xxHash, the implementation by Yann Collet is used.\n For murmurhash, an implementation by Shane Day is used.\n\n   Please note that this package is not meant to be deployed for \n cryptographic purposes for which more comprehensive (and widely \n tested) libraries such as OpenSSL should be used.",
+				"Depends" : "R (>= 2.4.1)",
+				"License" : "GPL-2",
+				"URL" : "http://dirk.eddelbuettel.com/code/digest.html",
+				"Packaged" : "2014-12-31 01:14:41.779054 UTC; edd",
+				"NeedsCompilation" : "yes",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-12-31 07:47:27",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-11-19 19:49:11 UTC; unix"
+			}
+		},
+		"htmltools" : {
+			"description" : {
+				"Package" : "htmltools",
+				"Type" : "Package",
+				"Title" : "Tools for HTML",
+				"Version" : "0.2.6",
+				"Date" : "2014-07-30",
+				"Author" : "RStudio, Inc.",
+				"Maintainer" : "Joe Cheng <joe@rstudio.com>",
+				"Description" : "Tools for HTML generation and output",
+				"Depends" : "R (>= 2.14.1)",
+				"Imports" : "utils, digest",
+				"Suggests" : "markdown, testthat",
+				"Enhances" : "knitr",
+				"License" : "GPL (>= 2)",
+				"Packaged" : "2014-09-08 16:45:00 UTC; jcheng",
+				"NeedsCompilation" : "no",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-09-08 19:23:28",
+				"Built" : "R 3.2.2; ; 2015-11-19 19:49:41 UTC; unix"
+			}
+		},
+		"R6" : {
+			"description" : {
+				"Package" : "R6",
+				"Title" : "Classes with Reference Semantics",
+				"Version" : "2.1.1",
+				"Authors@R" : "person(\"Winston\", \"Chang\", role = c(\"aut\", \"cre\"), email = \"winston@stdout.org\")",
+				"Description" : "The R6 package allows the creation of classes with reference\n    semantics, similar to R's built-in reference classes. Compared to reference\n    classes, R6 classes are simpler and lighter-weight, and they are not built\n    on S4 classes so they do not require the methods package. These classes\n    allow public and private members, and they support inheritance, even when\n    the classes are defined in different packages.",
+				"Depends" : "R (>= 3.0)",
+				"Suggests" : "knitr, microbenchmark, pryr, testthat, ggplot2, scales",
+				"License" : "MIT + file LICENSE",
+				"URL" : "https://github.com/wch/R6/",
+				"LazyData" : "true",
+				"VignetteBuilder" : "knitr",
+				"NeedsCompilation" : "no",
+				"Packaged" : "2015-08-18 22:19:06 UTC; winston",
+				"Author" : "Winston Chang [aut, cre]",
+				"Maintainer" : "Winston Chang <winston@stdout.org>",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-08-19 00:30:18",
+				"Built" : "R 3.2.2; ; 2015-11-19 19:49:14 UTC; unix"
+			}
+		},
+		"Rcpp" : {
+			"description" : {
+				"Package" : "Rcpp",
+				"Title" : "Seamless R and C++ Integration",
+				"Version" : "0.12.2",
+				"Date" : "2015-11-14",
+				"Author" : "Dirk Eddelbuettel, Romain Francois, JJ Allaire, Kevin Ushey, \n Qiang Kou, Douglas Bates and John Chambers",
+				"Maintainer" : "Dirk Eddelbuettel <edd@debian.org>",
+				"Description" : "The 'Rcpp' package provides R functions as well as C++ classes which\n offer a seamless integration of R and C++. Many R data types and objects can be\n mapped back and forth to C++ equivalents which facilitates both writing of new\n code as well as easier integration of third-party libraries. Documentation \n about 'Rcpp' is provided by several vignettes included in this package, via the \n 'Rcpp Gallery' site at <http://gallery.rcpp.org>, the paper by Eddelbuettel and \n Francois (2011, JSS), and the book by Eddelbuettel (2013, Springer); see \n 'citation(\"Rcpp\")' for details on these last two.",
+				"Depends" : "R (>= 3.0.0)",
+				"Imports" : "methods, utils",
+				"Suggests" : "RUnit, inline, rbenchmark, highlight, pkgKitten (>= 0.1.2)",
+				"VignetteBuilder" : "highlight",
+				"URL" : "http://www.rcpp.org, http://dirk.eddelbuettel.com/code/rcpp.html,\nhttps://github.com/RcppCore/Rcpp",
+				"License" : "GPL (>= 2)",
+				"BugReports" : "https://github.com/RcppCore/Rcpp/issues",
+				"MailingList" : "Please send questions and comments regarding Rcpp to\nrcpp-devel@lists.r-forge.r-project.org",
+				"NeedsCompilation" : "yes",
+				"Packaged" : "2015-11-14 14:50:33.472707 UTC; edd",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-11-15 22:07:02",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-11-19 19:48:41 UTC; unix"
+			}
+		},
+		"tools" : {
+			"description" : {
+				"Package" : "tools",
+				"Version" : "3.2.2",
+				"Priority" : "base",
+				"Title" : "Tools for Package Development",
+				"Author" : "R Core Team",
+				"Maintainer" : "R Core Team <R-core@r-project.org>",
+				"Description" : "Tools for package development, administration and documentation.",
+				"License" : "Part of R 3.2.2",
+				"Suggests" : "XML",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-08-14 19:29:43 UTC; unix"
+			}
+		},
+		"stats" : {
+			"description" : {
+				"Package" : "stats",
+				"Version" : "3.2.2",
+				"Priority" : "base",
+				"Title" : "The R Stats Package",
+				"Author" : "R Core Team and contributors worldwide",
+				"Maintainer" : "R Core Team <R-core@r-project.org>",
+				"Description" : "R statistical functions.",
+				"License" : "Part of R 3.2.2",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-08-14 19:31:03 UTC; unix"
+			}
+		},
+		"assertthat" : {
+			"description" : {
+				"Package" : "assertthat",
+				"Title" : "Easy pre and post assertions.",
+				"Version" : "0.1",
+				"Authors@R" : "'Hadley Wickham <h.wickham@gmail.com> [aut,cre]'",
+				"Description" : "assertthat is an extension to stopifnot() that makes it\n    easy to declare the pre and post conditions that you code should\n    satisfy, while also producing friendly error messages so that your\n    users know what they've done wrong.",
+				"License" : "GPL-3",
+				"Suggests" : "testthat",
+				"Collate" : "'assert-that.r' 'on-failure.r' 'assertions-file.r'\n'assertions-scalar.R' 'assertions.r' 'base.r'\n'base-comparison.r' 'base-is.r' 'base-logical.r' 'base-misc.r'\n'utils.r' 'validate-that.R'",
+				"Roxygen" : "list(wrap = FALSE)",
+				"Packaged" : "2013-12-05 18:46:37 UTC; hadley",
+				"Author" : "'Hadley Wickham' [aut, cre]",
+				"Maintainer" : "'Hadley Wickham' <h.wickham@gmail.com>",
+				"NeedsCompilation" : "no",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2013-12-06 00:51:10",
+				"Built" : "R 3.2.2; ; 2015-11-19 20:02:10 UTC; unix"
+			}
+		},
+		"magrittr" : {
+			"description" : {
+				"Package" : "magrittr",
+				"Type" : "Package",
+				"Title" : "A Forward-Pipe Operator for R",
+				"Version" : "1.5",
+				"Author" : "Stefan Milton Bache <stefan@stefanbache.dk> and\n    Hadley Wickham <h.wickham@gmail.com>",
+				"Maintainer" : "Stefan Milton Bache <stefan@stefanbache.dk>",
+				"Description" : "Provides a mechanism for chaining commands with a\n    new forward-pipe operator, %>%. This operator will forward a\n    value, or the result of an expression, into the next function\n    call/expression. There is flexible support for the type\n    of right-hand side expressions. For more information, see\n    package vignette.\n    To quote Rene Magritte, \"Ceci n'est pas un pipe.\"",
+				"Suggests" : "testthat, knitr",
+				"VignetteBuilder" : "knitr",
+				"License" : "MIT + file LICENSE",
+				"ByteCompile" : "Yes",
+				"Packaged" : "2014-11-22 08:50:53 UTC; shb",
+				"NeedsCompilation" : "no",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-11-22 19:15:57",
+				"Built" : "R 3.2.2; ; 2015-11-19 20:00:01 UTC; unix"
+			}
+		},
+		"lazyeval" : {
+			"description" : {
+				"Package" : "lazyeval",
+				"Version" : "0.1.10",
+				"Title" : "Lazy (Non-Standard) Evaluation",
+				"Description" : "A disciplined approach to non-standard evaluation.",
+				"Authors@R" : "as.person(c(\n    \"Hadley Wickham <hadley@rstudio.com> [aut,cre]\",\n    \"RStudio [cph]\"\n    ))",
+				"License" : "GPL-3",
+				"LazyData" : "true",
+				"Depends" : "R (>= 3.1.0)",
+				"Suggests" : "knitr, rmarkdown (>= 0.2.65), microbenchmark, testthat",
+				"VignetteBuilder" : "knitr",
+				"Packaged" : "2015-01-02 16:57:33 UTC; hadley",
+				"Author" : "Hadley Wickham [aut, cre],\n  RStudio [cph]",
+				"Maintainer" : "Hadley Wickham <hadley@rstudio.com>",
+				"NeedsCompilation" : "yes",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-01-02 18:01:12",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-11-19 20:02:11 UTC; unix"
+			}
+		},
+		"DBI" : {
+			"description" : {
+				"Package" : "DBI",
+				"Version" : "0.3.1",
+				"Title" : "R Database Interface",
+				"Author" : "R Special Interest Group on Databases (R-SIG-DB)",
+				"Maintainer" : "Hadley Wickham <hadley@rstudio.com>",
+				"Depends" : "R (>= 2.15.0), methods",
+				"Suggests" : "testthat, RSQLite",
+				"Description" : "A database interface (DBI) definition for communication\n    between R and relational database management systems.  All\n    classes in this package are virtual and need to be extended by\n    the various R/DBMS implementations.",
+				"License" : "LGPL (>= 2)",
+				"URL" : "https://github.com/rstats-db/DBI",
+				"BugReports" : "https://github.com/rstats-db/DBI/issues",
+				"Collate" : "'DBObject.R' 'DBConnection.R' 'DBDriver.R' 'DBResult.R'\n'compliance.R' 'keywords.R' 'quote.R' 'util.R'",
+				"Packaged" : "2014-09-23 21:42:02 UTC; hadley",
+				"NeedsCompilation" : "no",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-09-24 07:27:12",
+				"Built" : "R 3.2.2; ; 2015-11-19 20:02:12 UTC; unix"
+			}
+		},
+		"BH" : {
+			"description" : {
+				"Package" : "BH",
+				"Type" : "Package",
+				"Title" : "Boost C++ Header Files",
+				"Version" : "1.58.0-1",
+				"Date" : "2015-05-21",
+				"Author" : "Dirk Eddelbuettel, John W. Emerson and Michael J. Kane",
+				"Maintainer" : "Dirk Eddelbuettel <edd@debian.org>",
+				"Description" : "Boost provides free peer-reviewed portable C++ source \n libraries.  A large part of Boost is provided as C++ template code\n which is resolved entirely at compile-time without linking.  This \n package aims to provide the most useful subset of Boost libraries \n for template use among CRAN package. By placing these libraries in \n this package, we offer a more efficient distribution system for CRAN \n as replication of this code in the sources of other packages is \n avoided. ",
+				"License" : "BSL-1.0",
+				"MailingList" : "Please send questions and comments regarding BH to\nhttp://lists.r-forge.r-project.org/cgi-bin/mailman/listinfo/boostheaders-devel",
+				"BugReports" : "https://github.com/eddelbuettel/bh/issues",
+				"NeedsCompilation" : "no",
+				"Packaged" : "2015-05-21 12:09:46.302598 UTC; edd",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-05-21 17:09:02",
+				"Built" : "R 3.2.2; ; 2015-11-19 19:54:34 UTC; unix"
+			}
+		},
+		"parallel" : {
+			"description" : {
+				"Package" : "parallel",
+				"Version" : "3.2.2",
+				"Priority" : "base",
+				"Title" : "Support for Parallel computation in R",
+				"Author" : "R Core Team",
+				"Maintainer" : "R Core Team <R-core@r-project.org>",
+				"Description" : "Support for parallel computation, including by forking\n   (taken from package multicore), by sockets (taken from package snow)\n   and random-number generation.",
+				"License" : "Part of R 3.2.2",
+				"Imports" : "tools",
+				"Enhances" : "snow, nws, Rmpi",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-08-14 19:32:30 UTC; unix"
+			}
+		},
+		"htmlwidgets" : {
+			"description" : {
+				"Package" : "htmlwidgets",
+				"Type" : "Package",
+				"Title" : "HTML Widgets for R",
+				"Version" : "0.5",
+				"Date" : "2015-06-21",
+				"Authors@R" : "c(\n    person(\"Ramnath\", \"Vaidyanathan\", role = c(\"aut\", \"cph\")),\n    person(\"Yihui\", \"Xie\", role = c(\"aut\")),\n    person(\"JJ\", \"Allaire\", role = c(\"aut\", \"cre\"), email = \"jj@rstudio.com\"),\n    person(\"Joe\", \"Cheng\", role = c(\"aut\")),\n    person(\"Kenton\", \"Russell\", role = c(\"aut\", \"cph\")),\n    person(family = \"RStudio\", role = \"cph\")\n    )",
+				"Description" : "A framework for creating HTML widgets that render in various\n    contexts including the R console, 'R Markdown' documents, and 'Shiny'\n    web applications.",
+				"License" : "MIT + file LICENSE",
+				"VignetteBuilder" : "knitr",
+				"Imports" : "htmltools (>= 0.2.6), jsonlite (>= 0.9.16), yaml",
+				"Suggests" : "knitr (>= 1.8)",
+				"Enhances" : "shiny (>= 0.12)",
+				"URL" : "https://github.com/ramnathv/htmlwidgets",
+				"BugReports" : "https://github.com/ramnathv/htmlwidgets/issues",
+				"Packaged" : "2015-06-21 11:14:18 UTC; jjallaire",
+				"Author" : "Ramnath Vaidyanathan [aut, cph],\n  Yihui Xie [aut],\n  JJ Allaire [aut, cre],\n  Joe Cheng [aut],\n  Kenton Russell [aut, cph],\n  RStudio [cph]",
+				"Maintainer" : "JJ Allaire <jj@rstudio.com>",
+				"NeedsCompilation" : "no",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-06-21 15:56:34",
+				"Built" : "R 3.2.2; ; 2015-11-20 05:30:12 UTC; unix"
+			}
+		},
+		"yaml" : {
+			"description" : {
+				"Package" : "yaml",
+				"Type" : "Package",
+				"Title" : "Methods to convert R data to YAML and back",
+				"Version" : "2.1.13",
+				"Suggests" : "testthat",
+				"Date" : "2014-06-12",
+				"Author" : "Jeremy Stephens <jeremy.stephens@vanderbilt.edu>",
+				"Maintainer" : "Jeremy Stephens <jeremy.stephens@vanderbilt.edu>",
+				"License" : "BSD_3_clause + file LICENSE",
+				"Description" : "This package implements the libyaml YAML 1.1 parser and emitter (http://pyyaml.org/wiki/LibYAML) for R.",
+				"Packaged" : "2014-06-12 18:04:44 UTC; stephej1",
+				"NeedsCompilation" : "yes",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2014-06-12 21:01:16",
+				"Built" : "R 3.2.2; x86_64-redhat-linux-gnu; 2015-11-19 19:53:59 UTC; unix"
+			}
+		}
+	},
+	"files" : {
+		"master_data_1.rda" : {
+			"checksum" : "7a2c235331132b594389ecddfc9e2011"
+		},
+		"master_data.rda" : {
+			"checksum" : "54f28e1b1816d6b2907babde22622552"
+		},
+		"server.R" : {
+			"checksum" : "c6dd3e5622417a911b2e0a5dad53a7a9"
+		},
+		"ui.R" : {
+			"checksum" : "3eaa8a8a8f1378e9288edefc7a446fa9"
+		}
+	},
+	"users" : null
+}
