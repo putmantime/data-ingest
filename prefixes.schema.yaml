@@ -1,0 +1,131 @@
+####
+#### Use kwalify and this schema to validate the config files.
+#### Example:
+####    kwalify -E -m ./data-ingest/prefixes.schema.yaml
+####    kwalify -E -f ./data-ingest/prefixes.schema.yaml ./data-ingest/prefixes.schema.yaml
+####
+#### To convert to JSON once passed:
+####    ./node_modules/yamljs/bin/yaml2json -p ./data-ingest/prefixes.schema.yaml > ./data-ingest/prefixes.schema.json
+####
+type: seq
+sequence:
+  - type: map
+    mapping:
+      "prefix": # the identifier prefix that is--to the best of our knowledge--preferred by the provider or most commonly used
+      # when compact URI notation is used; the prefix must have a documented case convention but should not be case
+      # sensitive. It must be alphanumeric and without punctuation aside from hyphen (underscores discouraged)
+        type: str
+        required: true
+        unique: true
+      "is_deprecated": # should only be true if the entire db/ont has been deprecated and no longer supported (eg. LGICdb);
+      # if a given prefix is deprecated, it should just move to alt_prefixes
+        type: boolean
+        required: true
+      "alt_prefixes": #other identifier prefixes that have been used, if less commonly or not officially;
+      # these may also include short names or namespaces that have not necessarily been used as prefixes
+        type: seq
+        required: false
+        unique: true # todo: write a script to compare all alt_prefixes and prefix to ensure uniqueness across the combined corpus.
+        sequence:
+          - type: str
+      "name": # cannonical name of the database or ontology that corresponds to the prefix
+        type: str
+        required: true
+      "alt_names": # other names that the database / ontology may be referred to as
+        type: seq
+        required: false
+        sequence:
+          - type: str
+      "website": # url for the db/ontology as a whole; this does not have to do with individual catalog records
+                     # nor does it have to do with individual terms/properties etc
+                     # it may be the db/ontology homepage or it may be the page where the db/ontology is described
+                     # in some registry
+        type: seq
+        required: true
+        sequence:
+        - type: str
+      "description": # Short description of the db/ontology; #todo: what if these descriptions differ across registies?
+      # todo: take both? Curate? Pick the longer / shorter of the two?
+        type: str
+        required: false
+      "entity_types": # The kinds of entities that are described in the db/ontology. For each type there may be a corresponding syntax.
+      # however the syntax could be the same for different types, provided that the URLS do not differ by type either
+        type: seq
+        required: false
+        sequence:
+          - type: map
+            mapping:
+              "type_id":
+                type: str # Must be an ontology ID eg. type_id: SO:0000704
+                required: true
+              "type_name": # The label that corresponds to the above ID eg. type_name: gene
+                type: str
+                required: true
+              "lri_syntax": # The regular expression for the part of the identifier that follows the colon
+                type: str
+                required: false
+              "example_curie": # An example compact URI comprised of the above <prefix>:<LRI>
+                type: str
+                required: false
+              "lri_syntax": # The regular expression for the part of the identifier that follows the colon
+                type: str
+                required: false
+              "link_types": # The kinds of links that are offered (human readable, machine readable, or unknown);
+                            # In cases where the resources are distributed, or mirrored, there may be many instances of each type
+                type: seq
+                required: true
+                sequence:
+                  - type: map
+                    mapping:
+                      "nsp_syntax": # The syntax for the namespace path (nsp); that is how the access url / http URI is
+                      # formed for any given LRI, wherein the LRI is noted by [example_lri]
+                        type: str
+                        required: true
+                      "example_link": # An example access url / http URI formed using the nsp syntax and example LRI
+                        type: str
+                        required: true
+                      "nsp_syntax_is_deprecated": # Should be false unless a given style of nsp is no longer supported.
+                      # deprecated versions are valuable to document so that broken urls can be dereferenced and referenced
+                        type: boolean
+                        required: true
+      "versioning_policy":
+        type: str
+        required: false # Free text or URL to policy; should include a description of the granularity of versioning:
+        # whether versioning is done at the level of a whole database release or whether it is at the level of the
+        # individual entity. Also what the implications are for the access URLs.
+        # If archived records exist under an archive URL how the prefix and nsp should be modified to reflect this.
+      "registered_in": # The kinds of entities that are described in the db/ontology. For each type there may be a corresponding syntax.
+            # however the syntax could be the same for different types, provided that the URLS do not differ by type either
+        type: seq
+        required: false
+        sequence:
+          - type: map
+            mapping:
+              "name_of_registry":
+                type: str # The name of the registry: one of column A here: https://docs.google.com/spreadsheets/d/1cDGJcRteb9F5-jbw7Q7np0kk4hfWhdBHNYRIg3LXDrs/edit#gid=0
+                required: true
+              "id_in_registry": # The id of the database record in the registry eg: MIR:00000150
+                type: str
+                required: false
+              "url_in_registry": # If the registry in question has dedicated URLs for each database, what is it
+                type: str
+                required: false
+      "references": # pmid, doi, or, url
+        type: seq
+          required: false
+          sequence:
+            - type: str
+      "license":
+        type: seq
+          required: false
+          sequence:
+            - type: str
+      "parent_db": # it is often the case that NSPs (and therefore corresponding prefixes) vary by entity type
+#     we need some way of saying, for instance KEGG-Enzyme, KEGG-Disease, KEGG-Gene all belong to 'KEGG';
+#     we could theoretically try to create abstract record for 'KEGG' and then validate, however; this may be more
+#     trouble than it is worth. Instead, I recommend just using the base part of the prefix (w/out type); otherwise we end up
+#     having to for instance clarify that BioSample has two types of entities, samples, and groups, but either can be
+#     found in each of three places (ebi, ncbi, ddbj); what is the 'parent' project in this case, if not simply 'biosample'?
+#     If a given prefix does NOT belong to some higher-level grouping, this part can remain blank.
+        type: str
+        required: false
