@@ -120,11 +120,10 @@ sequence:
           required: false
           sequence:
             - type: str
-      "parent_db": # it is often the case that NSPs (and therefore corresponding prefixes) vary by entity type
-#     we need some way of saying, for instance KEGG-Enzyme, KEGG-Disease, KEGG-Gene all belong to 'KEGG';
+      "parent_db": # we need some way of saying, for instance KEGG-Enzyme, KEGG-Disease, KEGG-Gene all belong to 'KEGG';
 #     we could theoretically try to create abstract record for 'KEGG' and then validate, however; this may be more
-#     trouble than it is worth. Instead, I recommend just using the base part of the prefix (w/out type); otherwise we end up
-#     having to for instance clarify that BioSample has two types of entities, samples, and groups, but either can be
+#     trouble than it is worth. Instead, I recommend just adding this field for the base part of the prefix (w/out type)
+#     where applicable. This would simplify the BioSample use case: there two types of entities, 'samples', and 'groups', but either can be
 #     found in each of three places (ebi, ncbi, ddbj); what is the 'parent' project in this case, if not simply 'biosample'?
 #     If a given prefix does NOT belong to some higher-level grouping, this part can remain blank.
         type: str
