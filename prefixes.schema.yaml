@@ -67,9 +67,6 @@ sequence:
               "example_curie": # An example compact URI comprised of the above <prefix>:<LRI>
                 type: str
                 required: false
-              "lri_syntax": # The regular expression for the part of the identifier that follows the colon
-                type: str
-                required: false
               "link_types": # The kinds of links that are offered (human readable, machine readable, or unknown);
                             # In cases where the resources are distributed, or mirrored, there may be many instances of each type
                 type: seq
@@ -124,7 +121,7 @@ sequence:
 #     we could theoretically try to create abstract record for 'KEGG' and then validate, however; this may be more
 #     trouble than it is worth. Instead, I recommend just adding this field for the base part of the prefix (w/out type)
 #     where applicable. This would simplify the BioSample use case: there two types of entities, 'samples', and 'groups', but either can be
-#     found in each of three places (ebi, ncbi, ddbj); what is the 'parent' project in this case, if not simply 'biosample'?
+#     found in each of three places (ebi, ncbi, niddk); what is the 'parent' project in this case, if not simply 'biosample'?
 #     If a given prefix does NOT belong to some higher-level grouping, this part can remain blank.
         type: str
         required: false
