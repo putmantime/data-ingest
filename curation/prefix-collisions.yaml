@@ -1,0 +1,82 @@
+#Very few of these collisions are likely to be problematic because the corresponding databases/ontologies are unlikely to be referenced in the same context
+- prefix: ADW
+  names:
+    - Animal Diversity Web at University of Michigan #these may be alternates rather than collisions
+    - Animal Natural History and Life History Ontology
+- prefix: CBO
+  names:
+    - Cell Behavior Ontology
+    - Comic Book Ontology
+- prefix: CCO
+  names:
+    - Cell Cycle Ontology
+    - Cognitive Characteristics Ontology
+- prefix: CL
+  names:
+    - Cell Ontology
+    - Cinelab ontology
+- prefix: CMO
+  names:
+    - Clinical Measurement Ontology
+    - Conceptual Model Ontology
+    - RGD Ontology Browser #this is CMO IN the RGD browser, however, not sure which CMO it refers to
+- prefix: CO
+	names:
+    - Counter Ontology
+    - Crop Ontology
+- prefix: CT
+  names:
+    - ClinicalTrials.gov
+    - Connectivity types
+- prefix: EP
+  names:
+    - Cardiac Electrophysiology Ontology
+    - EPrints Ontology
+- prefix: GEO
+  names:
+    - Gene Expression Omnibus at NCBI
+    - Gene Expression Omnibus DataSets
+    - WGS84 Geo Positioning
+    - GeoNames ontology #this is not yet represented in the imported data
+- prefix: GM
+	names:
+    - ARRS GoldMiner
+    - OWL representation of ISO 19107 (Geographic Information)
+- prefix: MO
+	names:
+    - Microarray and Gene Expression Data Ontology
+- prefix: MO
+	names:
+    - Music Ontology
+- prefix: OAE
+	names:
+    - Ontology of Adverse Events
+    - Open NEE Model
+- prefix: PC
+	names:
+    - Pathway Commons
+    - Public Contracts Ontology
+- prefix: PDO
+	names:
+    - Pathogenic Disease Ontology
+    - Project Documents Ontology
+- prefix: SAO
+	names:
+  - SALT Annotation Ontology
+  - Subcellular Anatomy Ontology
+- prefix: SDO
+	names:
+    - SALT Document Ontology
+    - Sleep Domain Ontology
+- prefix: SP
+	names:
+    - SMART Protocols
+    - SPIN SPARQL Syntax
+- prefix: TAO
+	names:
+    - Teleost Anatomy Ontology
+    - Trust Assertion Ontology
+- prefix: VSO
+    - Vehicle Sales Ontology
+    - Vital Sign Ontology
+    - Department of Bioengineering and the San Diego Supercomputer Center #no idea what this refers to
