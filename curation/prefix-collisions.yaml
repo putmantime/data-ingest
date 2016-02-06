@@ -21,7 +21,7 @@
     - Conceptual Model Ontology
     - RGD Ontology Browser #this is CMO IN the RGD browser, however, not sure which CMO it refers to
 - prefix: CO
-	names:
+  names:
     - Counter Ontology
     - Crop Ontology
 - prefix: CT
