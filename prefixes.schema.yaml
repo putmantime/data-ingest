@@ -19,13 +19,13 @@ sequence:
         unique: true
       "is_deprecated": # should only be true if the entire db/ont has been deprecated and no longer supported (eg. LGICdb);
       # if a given prefix is deprecated, it should just move to alt_prefixes
-        type: boolean
+        type: bool
         required: true
       "alt_prefixes": #other identifier prefixes that have been used, if less commonly or not officially;
       # these may also include short names or namespaces that have not necessarily been used as prefixes
         type: seq
         required: false
-        unique: true # todo: write a script to compare all alt_prefixes and prefix to ensure uniqueness across the combined corpus.
+        #unique: true # todo: write a script to compare all alt_prefixes and prefix to ensure uniqueness across the combined corpus.
         sequence:
           - type: str
       "name": # cannonical name of the database or ontology that corresponds to the prefix
@@ -43,7 +43,7 @@ sequence:
         type: seq
         required: true
         sequence:
-        - type: str
+          - type: str
       "description": # Short description of the db/ontology; #todo: what if these descriptions differ across registies?
       # todo: take both? Curate? Pick the longer / shorter of the two?
         type: str
@@ -83,7 +83,7 @@ sequence:
                         required: true
                       "nsp_syntax_is_deprecated": # Should be false unless a given style of nsp is no longer supported.
                       # deprecated versions are valuable to document so that broken urls can be dereferenced and referenced
-                        type: boolean
+                        type: bool
                         required: true
       "versioning_policy":
         type: str
@@ -109,14 +109,13 @@ sequence:
                 required: false
       "references": # pmid, doi, or, url
         type: seq
-          required: false
-          sequence:
-            - type: str
+        sequence:
+          - type: str
       "license":
+        required: false
         type: seq
-          required: false
-          sequence:
-            - type: str
+        sequence:
+          - type: str
       "parent_db": # we need some way of saying, for instance KEGG-Enzyme, KEGG-Disease, KEGG-Gene all belong to 'KEGG';
 #     we could theoretically try to create abstract record for 'KEGG' and then validate, however; this may be more
 #     trouble than it is worth. Instead, I recommend just adding this field for the base part of the prefix (w/out type)
