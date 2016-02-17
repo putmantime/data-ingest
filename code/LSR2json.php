@@ -33,7 +33,7 @@ class lsr
 			"License URL" => "licenseURL",
 			"License Text" => "licenseText",
 			"ID regex" => "idRegex",
-			"ExampleID" => "exampleId",
+			"ExampleID" => "exampleID",
 			"Provider HTML URL" => "providerHtmlTemplate"
 		);
 		
@@ -47,7 +47,8 @@ class lsr
 			$z = new stdClass();
 			foreach($header AS $k => $v) {
 				if(isset($mapping[$v])
-						and isset($a[$k]) and $a[$k] != '') {
+						and isset($a[$k]) 
+						and $a[$k] != '') {
 					$f = $mapping[$v];
 					$z->$f = $a[$k];
 					if($f == "pubmed" or $f == "alternativePrefix" or $f == "alternativeBaseURI" or $f == "keywords") {
@@ -59,6 +60,11 @@ class lsr
 						$z->$f = $y;
 					}
 				}
+			}
+			$z->type = "dataset";
+			if(strstr($a[0],".")) {
+				// this is a sub-prefix
+				$z->type = "subset";
 			}
 			
 			$b = '{"index":{"_index":"prefixcommons","_type":"item","_id":"'.$id++.'"}}'.PHP_EOL.json_encode($z).PHP_EOL;
