@@ -5,6 +5,7 @@ class lsr
 {
 	var $lsr_url = 'https://docs.google.com/spreadsheet/pub?key=0AmzqhEUDpIPvdFR0UFhDUTZJdnNYdnJwdHdvNVlJR1E&single=true&gid=0&output=csv';
 	var $lsr_json_file = "../json/lsregistry.json";
+	var $lsr_json4yml_file = "../json/lsregistry_4yml.json";
 	var $lsr_csv_file = "../raw/lsregistry.csv";
 
 	function download()
@@ -20,7 +21,7 @@ class lsr
 			"Provider Base URI" => "preferredBaseURI",
 			"Alternative Base URI" => "alternativeBaseURI",
 			"MIRIAM" => "miriam",
-			"BiodbcoreID" => "biodbcore",
+			"BiodbcoreID" => "biosharing",
 			"BioPortal Ontology ID" => "bioportal",
 			"thedatahub" => "thedatahub",
 			"Abbreviation" => "abbreviation",
@@ -66,14 +67,26 @@ class lsr
 				// this is a sub-prefix
 				$z->type = "subset";
 			}
+			$list[] = $z;
 			
 			$b = '{"index":{"_index":"prefixcommons","_type":"item","_id":"'.$id++.'"}}'.PHP_EOL.json_encode($z).PHP_EOL;
 			fwrite($fout,$b);
 		}
 		fclose($fp);
 		fclose($fout);
+		
+		usort($list, "mySort");
+		file_put_contents ($this->lsr_json4yml_file,json_encode($list, JSON_PRETTY_PRINT));
 	}	
 }
+
+
+function mySort($a, $b) {
+	$i = $a; $j = $b;
+    if( $i->preferredPrefix >= $j->preferredPrefix) return 1;
+    return -1;
+}
+
 
 $lsr = new lsr();
 $lsr->download();
