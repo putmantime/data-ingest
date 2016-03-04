@@ -39,41 +39,42 @@
     - WGS84 Geo Positioning
     - GeoNames ontology #this is not yet represented in the imported data
 - prefix: GM
-	names:
+  names:
     - ARRS GoldMiner
     - OWL representation of ISO 19107 (Geographic Information)
 - prefix: MO
 	names:
     - Microarray and Gene Expression Data Ontology
 - prefix: MO
-	names:
+  names:
     - Music Ontology
+    - Microarray and Gene Expression Data Ontology
 - prefix: OAE
-	names:
+  names:
     - Ontology of Adverse Events
     - Open NEE Model
 - prefix: PC
-	names:
+  names:
     - Pathway Commons
     - Public Contracts Ontology
 - prefix: PDO
-	names:
+  names:
     - Pathogenic Disease Ontology
     - Project Documents Ontology
 - prefix: SAO
-	names:
+  names:
   - SALT Annotation Ontology
   - Subcellular Anatomy Ontology
 - prefix: SDO
-	names:
+  names:
     - SALT Document Ontology
     - Sleep Domain Ontology
 - prefix: SP
-	names:
+  names:
     - SMART Protocols
     - SPIN SPARQL Syntax
 - prefix: TAO
-	names:
+  names:
     - Teleost Anatomy Ontology
     - Trust Assertion Ontology
 - prefix: VSO
