@@ -1,29 +1,36 @@
 #Very few of these collisions are likely to be problematic because the corresponding databases/ontologies are unlikely to be referenced in the same context
-- prefix: ADW
-  names:
-    - Animal Diversity Web at University of Michigan #these may be alternates rather than collisions
-    - Animal Natural History and Life History Ontology
+
+#High confidence of minimal impact of collisions
 - prefix: CBO
   names:
     - Cell Behavior Ontology
     - Comic Book Ontology
-- prefix: CCO
+- prefix: MO
   names:
-    - Cell Cycle Ontology
-    - Cognitive Characteristics Ontology
+    - Music Ontology
+    - Microarray and Gene Expression Data Ontology
 - prefix: CL
   names:
     - Cell Ontology
     - Cinelab ontology
-- prefix: CMO
+- prefix: TAO
   names:
-    - Clinical Measurement Ontology
-    - Conceptual Model Ontology
-    - RGD Ontology Browser #this is CMO IN the RGD browser, however, not sure which CMO it refers to
+    - Teleost Anatomy Ontology
+    - Trust Assertion Ontology
 - prefix: CO
   names:
-    - Counter Ontology
+    - Counter Ontology # appears music related https://smiy.wordpress.com/2010/07/26/the-counter-ontology/
     - Crop Ontology
+- prefix: CCO
+  names:
+    - Cell Cycle Ontology
+    - Cognitive Characteristics Ontology # appears music related
+- prefix: PC
+  names:
+    - Pathway Commons
+    - Public Contracts Ontology
+    
+# Medium confidence of minimal impact of collisions
 - prefix: CT
   names:
     - ClinicalTrials.gov
@@ -38,25 +45,16 @@
     - Gene Expression Omnibus DataSets
     - WGS84 Geo Positioning
     - GeoNames ontology #this is not yet represented in the imported data
+ 
+# Unknown impact of collisions  
 - prefix: GM
   names:
     - ARRS GoldMiner
     - OWL representation of ISO 19107 (Geographic Information)
-- prefix: MO
-	names:
-    - Microarray and Gene Expression Data Ontology
-- prefix: MO
-  names:
-    - Music Ontology
-    - Microarray and Gene Expression Data Ontology
 - prefix: OAE
   names:
     - Ontology of Adverse Events
     - Open NEE Model
-- prefix: PC
-  names:
-    - Pathway Commons
-    - Public Contracts Ontology
 - prefix: PDO
   names:
     - Pathogenic Disease Ontology
@@ -73,11 +71,17 @@
   names:
     - SMART Protocols
     - SPIN SPARQL Syntax
-- prefix: TAO
-  names:
-    - Teleost Anatomy Ontology
-    - Trust Assertion Ontology
 - prefix: VSO
+  names:
     - Vehicle Sales Ontology
     - Vital Sign Ontology
     - Department of Bioengineering and the San Diego Supercomputer Center #no idea what this refers to
+ - prefix: ADW
+  names:
+    - Animal Diversity Web at University of Michigan #these may be alternates rather than collisions
+    - Animal Natural History and Life History Ontology
+ - prefix: CMO
+  names:
+    - Clinical Measurement Ontology
+    - Conceptual Model Ontology
+    - RGD Ontology Browser #this is CMO IN the RGD browser, however, not sure which CMO it refers to
