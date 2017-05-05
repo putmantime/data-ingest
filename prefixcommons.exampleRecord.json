@@ -105,9 +105,27 @@
       {
        "label": "AmiGO",
        "homepage": "http://amigo.geneontology.org",
-       "organization": {"id":"org/goc"}
-        
-      }
+       "organization": {"id":"org/goc"},
+       "URIpattern": "http://amigo.geneontology.org/amigo/term/GO:${id}",
+        "contentTypes": ["text/html"]
+      }, {
+       "label": "GO via Bio2RDF",
+       "homepage": "http://bio2rdf.org",
+       "organization": {"id":"org/bio2rdf"},
+       "URIpattern": "http://bio2rdf.org/go:${id}",
+        "contentTypes": [
+          "text/html",
+          "application/json",
+          "application/xml",
+          "text/csv",
+          "text/tab-delimited",
+          "text/plain",
+          "application/ld+json",
+          "application/rdf+xml",
+          "application/n-triples",
+          "application/turtle"
+         ]     
+  		}
     ]
   },
   {
