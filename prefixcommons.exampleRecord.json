@@ -1,0 +1,143 @@
+[
+  {
+    "id": "pc/1",
+    "type": "terminology",
+    "label": "Gene Ontology",
+    "abbreviation": "GO",
+    "description": "The Gene Ontology project provides an ontology of defined terms representing gene product properties. The ontology covers three domains: cellular component, molecular function, and biological process",
+    "homepage": "http://geneontology.org",
+    "authority": {
+      "id": "org/goc"
+    },
+    "license": "http://geneontology.org/page/use-and-license",
+    "documentation": "http://geneontology.org/page/documentation",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/14681407",
+      "https://www.ncbi.nlm.nih.gov/pubmed/10802651"
+    ],
+    "keywords": [
+      "obo",
+      "gene",
+      "ontology"
+    ],
+    "prefixes": [
+      {
+        "label": "GO",
+        "usedBy": [
+          {
+            "id": "org/goc"
+          },
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "go",
+        "usedBy": [
+          {
+            "id": "org/bio2rdf"
+          }
+        ]
+      },
+      {
+        "label": "gene_ontology",
+        "usedBy": [
+          {
+            "id": "org/kegg"
+          }
+        ]
+      }
+    ],
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/go",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://bio2rdf.org/go",
+        "authority": {
+          "id": "org/bio2rdf"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/GO",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "id-regex": "\\d{7}",
+    "id-example": "0004352",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/GO_${id}",
+        "usedBy": [
+          {"id":"org/obofoundry"}
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/obo.go/GO:${id}",
+        "usedBy": [
+          {"id":"org/id.org"}
+        ]
+      },
+      {
+        "URIpattern": "http://bio2rdf.org/go:${id}",
+        "usedBy": [
+          {"id":"org/bio2rdf"}
+        ]
+      },
+      {
+        "URIpattern": "http://purl.org/obo/owl/GO#${id}",
+        "usedBy": [
+          {"id":"org/obofoundry"}
+        ],
+        "status":"deprecated"
+      }
+    ],
+    "services": [
+      {
+       "label": "AmiGO",
+       "homepage": "http://amigo.geneontology.org",
+       "organization": {"id":"org/goc"}
+        
+      }
+    ]
+  },
+  {
+    "id": "org/goc",
+    "type": "agent",
+    "label": "Gene Ontology Consortium",
+    "homepage": "http://geneontology.org"
+  },
+  {
+    "id": "org/bio2rdf",
+    "type": "agent",
+    "label": "Bio2RDF",
+    "homepage": "http://bio2rdf.org"
+  },
+  {
+    "id": "org/id.org",
+    "type": "agent",
+    "label": "Identifiers.org",
+    "homepage": "http://identifiers.org"
+  },
+  {
+    "id": "org/obofoundry",
+    "type": "agent",
+    "label": "OBO Foundry",
+    "homepage": "http://obofoundry.org"
+  },
+  {
+    "id": "org/kegg",
+    "type": "agent",
+    "label": "KEGG",
+    "homepage": "http://kegg.org"
+  }
+]

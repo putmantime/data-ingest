@@ -1,0 +1,256 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://prefixcommons.org/schemas/prefixcommons-schema-0.2.json",
+  "version": "0.1",
+  "creator": "michel dumontier",
+  "type": "array",
+  "description": "prefixcommons schema v0.1",
+  "items": {
+    "oneOf": [
+      {
+        "$ref": "#/definitions/resource"
+      },
+      {
+        "$ref": "#/definitions/agent"
+      }
+    ]
+  },
+  "definitions": {
+    "pcID": {
+      "type": "string",
+      "pattern": "^pc/[0-9]+$"
+    },
+    "resource": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "$ref": "#/definitions/pcID"
+        },
+        "label": {
+          "type": "string"
+        },
+        "abbreviation": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "repository",
+            "dataset",
+            "terminology"
+          ]
+        },
+        "homepage": {
+          "format": "uri"
+        },
+        "license": {
+          "format": "uri"
+        },
+        "documentation": {
+          "format": "uri"
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "prefixes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/prefixEntry"
+          }
+        },
+        "authority": {
+          "$ref": "#/definitions/agent"
+        },
+        "datasetIDs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/datasetID"
+          }
+        },
+        "id-regex": {
+          "type": "string"
+        },
+        "id-example": {
+          "type": "string"
+        },
+        "URIpatterns": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/URIpatternEntry"
+          }
+        },
+        "services": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/serviceEntry"
+          }
+        }
+      },
+      "require": [
+        "id",
+        "label",
+        "description",
+        "type",
+        "prefixes",
+        "responsibleAgent"
+      ],
+      "additionalProperties": false
+    },
+    "agentid": {
+      "type": "string",
+      "pattern": "^org/.+$"
+    },
+    "agent": {
+      "$id": "http://example.org/organization/",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "$ref": "#/definitions/agentid"
+        },
+        "type": {
+          "enum": [
+            "agent"
+          ]
+        },
+        "label": {
+          "type": "string"
+        },
+        "homepage": {
+          "format": "uri"
+        },
+        "email": {
+          "format": "email"
+        }
+      },
+      "require": [
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "prefixID": {
+      "type": "string",
+      "pattern": "^pc/[0-9]+$"
+    },
+    "prefixEntry": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "$ref": "#/definitions/prefixID"
+        },
+        "label": {
+          "type": "string"
+        },
+        "usedBy": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/agent"
+          }
+        }
+      },
+      "require": [
+        "prefix"
+      ],
+      "additionalProperties": false
+    },
+    "datasetID": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "authority": {
+          "$ref": "#/definitions/agent"
+        }
+      },
+      "additionalProperties": false
+    },
+    "URIpatternEntry": {
+      "type": "object",
+      "properties": {
+        "URIpattern": {
+          "type": "string"
+        },
+        "usedBy": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/agent"
+          }
+        },
+        "status": {
+          "enum": [
+            "deprecated"
+          ]
+        }
+      },
+      "require": [
+        "URIpattern"
+      ],
+      "additionalProperties": false
+    },
+    "serviceEntry": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "homepage": {
+          "format": "url"
+        },
+        "organization": {
+          "$ref": "#/definitions/agent"
+        },
+        "URIpattern": {
+          "type": "string"
+        },
+        "contentTypes": {
+          "$ref": "#/definitions/contentTypes"
+        }
+      },
+      "require": [
+        "label",
+        "URIpattern",
+        "contentTypes"
+      ],
+      "additionalProperties": false
+    },
+    "contentTypes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "text/html",
+          "application/json",
+          "application/xml",
+          "text/csv",
+          "text/tab-delimited",
+          "text/plain",
+          "application/ld+json",
+          "application/rdf+xml",
+          "application/n-triples",
+          "application/turtle"
+        ]
+      },
+      "status": {"enum":["deprecated"]}
+    },
+      "require": ["label","homepage","orgnization","URIpattern","contentTypes"],
+      "additionalProperties": false
+  }
+}
