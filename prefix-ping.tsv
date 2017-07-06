@@ -6,4 +6,5 @@ LOV	http://lov.okfn.org/dataset/lov/vocabs/foobar	404		http://lov.okfn.org/datas
 Prefix.cc	http://prefix.cc/foobar	404		http://prefix.cc/
 SciCrunch	https://scicrunch.org/resolver/foobar	400		via email to info@scicrunch.org
 DataHub	http://datahub.io/dataset/foobar	400		http://help.datahub.io/kb/general/creating-a-dataset-on-the-datahub-december-2013
+Bio2RDF	http://bio2rdf.org/lsr:foobar	400		bio2rdf@googlegroups.com
 BioSharing	https://biosharing.org/search/?q=&shortname=foobar&search_state=visible	200	<strong>0</strong> records in view</p>	https://biosharing.org/new/
