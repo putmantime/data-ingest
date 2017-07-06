@@ -1,10 +1,10 @@
-Endpoint	Status code if missing prefix	Contained in message if 200 but nevertheless missing
-http://identifiers.org/foobar	404	
-http://www.ontobee.org/browser/index.php?o=foobar	500	
-http://purl.bioontology.org/ontology/foobar	500	
-http://lov.okfn.org/dataset/lov/vocabs/foobar	404	
-http://prefix.cc/foobar	404	
-https://scicrunch.org/resolver/foobar	400	
-http://datahub.io/dataset/foobar	400	
-http://bio2rdf.org/lsr/foobar	404	
-https://biosharing.org/search/?q=&shortname=foobar&search_state=visible	200	<strong>0</strong> records in view
+Name of Registry  Endpoint	Status code if missing prefix	Contained in message if 200 but nevertheless missing
+identifiers.org http://identifiers.org/foobar	404	
+Ontobee http://www.ontobee.org/browser/index.php?o=foobar	500	
+Bioontology http://purl.bioontology.org/ontology/foobar	500	
+LOV  http://lov.okfn.org/dataset/lov/vocabs/foobar	404	
+PrefixCC  http://prefix.cc/foobar	404	
+SciCrunch https://scicrunch.org/resolver/foobar	400	
+DataHub http://datahub.io/dataset/foobar	400	
+Bio2RDF http://bio2rdf.org/lsr/foobar	404	
+BioSharing  https://biosharing.org/search/?q=&shortname=foobar&search_state=visible	200	<strong>0</strong> records in view
