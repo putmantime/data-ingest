@@ -1,8 +1,9 @@
-Identifiers.org	Taken	http://identifiers.org/go	http://sourceforge.net/p/identifiers-org/new-collection/
-Ontobee	Taken	http://www.ontobee.org/browser/index.php?o=go	Send email via https://lists.sourceforge.net/lists/listinfo/obo-discuss
-Bioportal	Taken	http://purl.bioontology.org/ontology/go	https://bioportal.bioontology.org/login?redirect=/ontologies/new
-LOV	Taken	http://lov.okfn.org/dataset/lov/vocabs/go	http://lov.okfn.org/dataset/lov/suggest
-Prefix.cc	Taken	http://prefix.cc/go	http://prefix.cc/
-SciCrunch	Taken	https://scicrunch.org/resolver/go	via email to info@scicrunch.org
-DataHub	Taken	http://datahub.io/dataset/go	http://help.datahub.io/kb/general/creating-a-dataset-on-the-datahub-december-2013
-BioSharing	Taken	https://biosharing.org/search/?q=&shortname=go&search_state=visible	https://biosharing.org/new/
+Name	Endpoint	Status code if missing prefix	Contained in message if 200 but nevertheless missing	Link to register if available
+Identifiers.org	http://identifiers.org/foobar	404		http://sourceforge.net/p/identifiers-org/new-collection/
+Ontobee	http://www.ontobee.org/browser/index.php?o=foobar	500		Send email via https://lists.sourceforge.net/lists/listinfo/obo-discuss
+Bioportal	http://purl.bioontology.org/ontology/foobar	500		https://bioportal.bioontology.org/login?redirect=/ontologies/new
+LOV	http://lov.okfn.org/dataset/lov/vocabs/foobar	404		http://lov.okfn.org/dataset/lov/suggest
+Prefix.cc	http://prefix.cc/foobar	404		http://prefix.cc/
+SciCrunch	https://scicrunch.org/resolver/foobar	400		via email to info@scicrunch.org
+DataHub	http://datahub.io/dataset/foobar	400		http://help.datahub.io/kb/general/creating-a-dataset-on-the-datahub-december-2013
+BioSharing	https://biosharing.org/search/?q=&shortname=foobar&search_state=visible	200	<strong>0</strong> records in view</p>	https://biosharing.org/new/
