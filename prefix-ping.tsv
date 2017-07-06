@@ -1,4 +1,4 @@
-Name	Endpoint	Status code if missing prefix	Contained in message if 200 but nevertheless missing
+Registry Name	Endpoint	Status code if missing prefix	Contained in message if 200 but nevertheless missing
 Identifiers.org	http://identifiers.org/foobar	404	
 Ontobee	http://www.ontobee.org/browser/index.php?o=foobar	500	
 Bioportal	http://purl.bioontology.org/ontology/foobar	500	
