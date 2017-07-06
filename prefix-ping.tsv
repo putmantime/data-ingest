@@ -1,4 +1,4 @@
-Registry Name	Endpoint	Status code if missing prefix	Contained in message if 200 but nevertheless missing	Link to register if available
+Registry Name	Endpoint	Status code if prefix is available	Contained in message if 200 but nevertheless missing	Link to register if available
 Identifiers.org	http://identifiers.org/foobar	404		http://sourceforge.net/p/identifiers-org/new-collection/
 Ontobee	http://www.ontobee.org/browser/index.php?o=foobar	500		Send email via https://lists.sourceforge.net/lists/listinfo/obo-discuss
 Bioportal	http://purl.bioontology.org/ontology/foobar	500		https://bioportal.bioontology.org/login?redirect=/ontologies/new
