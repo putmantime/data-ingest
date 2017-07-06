@@ -1,0 +1,10 @@
+Endpoint	Status code if missing prefix	Contained in message if 200 but nevertheless missing
+http://identifiers.org/foobar	404	
+http://www.ontobee.org/browser/index.php?o=foobar	500	
+http://purl.bioontology.org/ontology/foobar	500	
+http://lov.okfn.org/dataset/lov/vocabs/foobar	404	
+http://prefix.cc/foobar	404	
+https://scicrunch.org/resolver/foobar	400	
+http://datahub.io/dataset/foobar	400	
+http://bio2rdf.org/lsr/foobar	404	
+https://biosharing.org/search/?q=&shortname=foobar&search_state=visible	200	<strong>0</strong> records in view
