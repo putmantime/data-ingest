@@ -1,0 +1,3095 @@
+[
+  {
+    "id-regex": "^HP:\\d{7}$",
+    "id-example": "0000118",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/24217912"
+    ],
+    "prefixes": [
+      {
+        "label": "hp",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "HP",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://human-phenotype-ontology.github.io/",
+        "label": "Human Phenotype Ontology at Institute for Medical Genetics and Human Genetics",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://compbio.charite.de/hpoweb/showterm?id=$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/hp",
+        "label": "Human Phenotype Ontology through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/hp/terms?obo_id=$id"
+      }
+    ],
+    "description": "The Human Phenotype Ontology (HPO) aims to provide a standardized vocabulary of phenotypic abnormalities encountered in human disease. Each term in the HPO describes a phenotypic abnormality, such as atrial septal defect. The HPO is currently being developed using the medical literature, Orphanet, DECIPHER, and OMIM.",
+    "license": null,
+    "homepage": "http://www.human-phenotype-ontology.org/",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/hp/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/HP",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/hp.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/hp_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/hp/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/HP_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/HP",
+    "keywords": [
+      "human",
+      "ontology",
+      "phenotype"
+    ],
+    "abbreviation": "HP"
+  },
+  {
+    "id-regex": "^FMA:\\d+$",
+    "id-example": "67112",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/17271570"
+    ],
+    "prefixes": [
+      {
+        "label": "FMA",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "fma",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/fma/",
+        "label": "Foundational Model of Anatomy via Ontology Lookup Service (OLS)",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/fma/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/FMA",
+        "label": "Foundational Model of Anatomy through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/FMA_subset/$id"
+      }
+    ],
+    "description": "The Foundational Model of Anatomy Ontology (FMA) is a biomedical informatics ontology. It is concerned with the representation of classes or types and relationships necessary for the symbolic representation of the phenotypic structure of the human body.  Specifically, the FMA is a domain ontology that represents a coherent body of explicit declarative knowledge about human anatomy.",
+    "license": null,
+    "homepage": "http://si.washington.edu/projects/fma",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/fma/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/FMA",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/fma.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/fma_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/fma/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/FMA_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/FMA",
+    "keywords": "ontology",
+    "abbreviation": "FMA"
+  },
+  {
+    "id-regex": "(^OBI:\\d{7}$)|(^OBI_\\d{7}$)",
+    "id-example": "0000070",
+    "references": [],
+    "prefixes": [
+      {
+        "label": "obi",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "OBI",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.ontobee.org/",
+        "label": "OBI through Ontobee",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.obolibrary.org/obo/$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/OBI",
+        "label": "Ontology for Biomedical Investigations through Bioportal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/OBI/$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/obi",
+        "label": "OBI through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/obi/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://obi-ontology.org/page/Main_Page",
+        "label": "OBI at MIT",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://ashby.csail.mit.edu/cgi-bin/obiterm?ref=$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/beta/ontologies/obi",
+        "label": "OBI through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/beta/ontologies/obi/terms?obo_id=$id"
+      }
+    ],
+    "description": "The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of biological and clinical investigations. The ontology will represent the design of an investigation, the protocols and instrumentation used, the material used, the data generated and the type analysis performed on it. Currently OBI is being built under the Basic Formal Ontology (BFO).",
+    "license": {
+      "url": "http://creativecommons.org/licenses/by/3.0/",
+      "label": "CC-BY",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": "http://obi-ontology.org",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/obi/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/OBI",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/obi.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/obi_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/obi/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/OBI_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/OBI",
+    "keywords": null,
+    "abbreviation": "OBI"
+  },
+  {
+    "id-regex": "^SBO:\\d{7}$",
+    "id-example": "0000262",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/17118155"
+    ],
+    "prefixes": [
+      {
+        "label": "SBO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "sbo",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.ebi.ac.uk/sbo/",
+        "label": "SBO",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/sbo/main/$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/sbo",
+        "label": "SBO through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/sbo/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/SBO",
+        "label": "SBO through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/SBO/$id"
+      }
+    ],
+    "description": "The goal of the Systems Biology Ontology is to develop controlled vocabularies and ontologies tailored specifically for the kinds of problems being faced in Systems Biology, especially in the context of computational modeling. SBO is a project of the BioModels.net effort.",
+    "license": {
+      "url": "http://opensource.org/licenses/Artistic-2.0",
+      "label": "Artistic License 2.0"
+    },
+    "homepage": "http://www.ebi.ac.uk/sbo/",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/sbo/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/SBO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/sbo.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/sbo_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/sbo/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/SBO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/SBO",
+    "keywords": "ontology",
+    "abbreviation": "SBO"
+  },
+  {
+    "id-regex": "^BTO:\\d{7}$",
+    "id-example": "0000146",
+    "references": [],
+    "prefixes": [
+      {
+        "label": "BTO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "bto",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/bto",
+        "label": "Brenda Tissue Ontology through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/bto/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/BTO",
+        "label": "Brenda Tissue Ontology through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/BTO/$id"
+      }
+    ],
+    "description": "The Brenda tissue ontology is a structured controlled vocabulary eastablished to identify the source of an enzyme cited in the Brenda enzyme database. It comprises terms of tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.",
+    "license": {
+      "url": "http://www.brenda-enzymes.org/copy.php",
+      "label": "BRENDA license",
+      "alert": "Restricted"
+    },
+    "homepage": "http://www.brenda-enzymes.info",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/bto/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/BTO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/bto.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/bto_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/bto/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/BTO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/BTO",
+    "keywords": "ontology",
+    "abbreviation": "BTO"
+  },
+  {
+    "id-regex": "^\\d{7}$",
+    "id-example": "0005506",
+    "references": [],
+    "prefixes": [
+      {
+        "label": "omit",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "OMIT",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [],
+    "description": "The purpose of the OMIT ontology is to establish data exchange standards and common data elements in the microRNA (miR) domain. Biologists (cell biologists in particular) and bioinformaticians can make use of OMIT to leverage emerging semantic technologies in knowledge acquisition and discovery for more effective identification of important roles performed by miRs in humans' various diseases and biological processes (usually through miRs' respective target genes).",
+    "license": null,
+    "homepage": "http://omit.cis.usouthal.edu/",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/omit/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/OMIT",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/omit.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/omit_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/omit/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/OMIT_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/OMIT",
+    "keywords": null,
+    "abbreviation": "OMIT"
+  },
+  {
+    "id-regex": "^MP:\\d{7}$",
+    "id-example": "0005452",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/20052305",
+      "https://www.ncbi.nlm.nih.gov/pubmed/20052305"
+    ],
+    "prefixes": [
+      {
+        "label": "MP",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "mp",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.informatics.jax.org/",
+        "label": "Mammalian Phenotype Ontology at The Jackson Lab",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.informatics.jax.org/searches/Phat.cgi?id=$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/mp/",
+        "label": "Mammalian Phenotype Ontology through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/mp/terms?obo_id=$id"
+      },
+      {
+        "homepage": "https://bioportal.bioontology.org/ontologies/MP",
+        "label": "Mammalian Phenotype Ontology through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "https://bioportal.bioontology.org/ontologies/MP/$id"
+      }
+    ],
+    "description": "The Mammalian Phenotype Ontology (MP) classifies and organises phenotypic information related to the mouse and other mammalian species. This ontology has been applied to mouse phenotype descriptions in various databases allowing comparisons of data from diverse mammalian sources. It can facilitate in the identification of appropriate experimental disease models, and aid in the discovery of candidate disease genes and molecular signaling pathways.",
+    "license": null,
+    "homepage": "http://www.informatics.jax.org/searches/MP_form.shtml",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/mp/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/MP",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/mp.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/mp_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/mp/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/MP_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/MP",
+    "keywords": [
+      "mammalian",
+      "ontology",
+      "phenotype"
+    ],
+    "abbreviation": "MP"
+  },
+  {
+    "id-regex": "^VariO:\\d+$",
+    "id-example": "0294",
+    "references": [],
+    "prefixes": [
+      {
+        "label": "vario",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "VARIO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.variationontology.org/",
+        "label": "VariO at Lund University",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.variationontology.org/cgi-bin/amivario/term-details.cgi?term=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/VARIO",
+        "label": "VariO through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/VARIO/$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/vario",
+        "label": "VariO through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/vario/terms?obo_id=$id"
+      }
+    ],
+    "description": "The Variation Ontology (VariO) is an ontology for the standardized, systematic description of effects, consequences and mechanisms of variations. It describes the effects of variations at the DNA, RNA and/or protein level.",
+    "license": null,
+    "homepage": "http://variationontology.org",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/vario/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/VARIO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/vario.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/vario_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/vario/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/VARIO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/VARIO",
+    "keywords": [
+      "DNA",
+      "ontology",
+      "protein"
+    ],
+    "abbreviation": "VARIO"
+  },
+  {
+    "id-regex": "^UO:\\d{7}?",
+    "id-example": "0000080",
+    "references": [],
+    "prefixes": [
+      {
+        "label": "UO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "uo",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/uo",
+        "label": "Unit Ontology via Ontology Lookup Service",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/uo/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/UO",
+        "label": "Unit Ontology through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/UO/$id"
+      }
+    ],
+    "description": "Ontology of standardized units",
+    "license": {
+      "url": "http://creativecommons.org/licenses/by/3.0/",
+      "label": "CC-BY",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": "https://github.com/bio-ontology-research-group/unit-ontology",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/uo/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/UO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/uo.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/uo_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/uo/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/UO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/UO",
+    "keywords": "ontology",
+    "abbreviation": "UO"
+  },
+  {
+    "id-regex": "^(P)?EO\\:\\d{7}$",
+    "id-example": "0007404",
+    "references": [],
+    "prefixes": [
+      {
+        "label": "EO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "eo",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://archive.gramene.org/db/ontology/search_term?id=EO:0007359",
+        "label": "Plant Environment Ontology through Gramene",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://archive.gramene.org/db/ontology/search?query=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/PECO",
+        "label": "Plant Environment Ontology through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/PECO/$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/eo",
+        "label": "Plant Environment Ontology through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/eo/terms?obo_id=$id"
+      }
+    ],
+    "description": "The Plant Environment Ontology is a set of standardized controlled vocabularies to describe various types of treatments given to an individual plant / a population or a cultured tissue and/or cell type sample to evaluate the response on its exposure. It also includes the study types, where the terms can be used to identify the growth study facility. Each growth facility such as field study, growth chamber, green house etc is a environment on its own it may also involve instances of biotic and abiotic environments as supplemental treatments used in these studies.",
+    "license": {
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "label": "CC-BY 4.0",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": "http://planteome.org/",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/eo/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/EO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/eo.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/eo_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/eo/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/EO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/EO",
+    "keywords": [
+      "controlled vocabulary",
+      "plant"
+    ],
+    "abbreviation": "EO"
+  },
+  {
+    "id-regex": "^DOID\\:\\d+$",
+    "id-example": "11337",
+    "references": [],
+    "prefixes": [
+      {
+        "label": "doid",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "DOID",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/DOID",
+        "label": "Human Disease Ontology through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/DOID/$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/doid",
+        "label": "Human Disease Ontology through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/doid/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://disease-ontology.org/",
+        "label": "Human Disease Ontology at Northwestern University",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://disease-ontology.org/term/$id"
+      }
+    ],
+    "description": "The Disease Ontology has been developed as a standardized ontology for human disease with the purpose of providing the biomedical community with consistent, reusable and sustainable descriptions of human disease terms, phenotype characteristics and related medical vocabulary disease concepts.",
+    "license": {
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "label": "CC0 1.0 Universal",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
+    },
+    "homepage": "http://www.disease-ontology.org",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/doid/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/DOID",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/doid.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/doid_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/doid/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/DOID_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/DOID",
+    "keywords": [
+      "disease",
+      "human",
+      "ontology"
+    ],
+    "abbreviation": "DOID"
+  },
+  {
+    "id-regex": "ECO:\\d{7}$",
+    "id-example": "0000006",
+    "references": [],
+    "prefixes": [
+      {
+        "label": "ECO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "eco",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/eco",
+        "label": "Evidence Codes via the Ontology Lookup Service (OLS)",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/eco/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/ECO",
+        "label": "Evidence Code Ontology through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/ECO/$id"
+      }
+    ],
+    "description": "Evidence codes can be used to specify the type of supporting evidence for a piece of knowledge. This allows inference of a 'level of support' between an entity and an annotation made to an entity.",
+    "license": {
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "label": "CC0 1.0 Universal",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
+    },
+    "homepage": "https://github.com/evidenceontology/evidenceontology/",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/eco/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/ECO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/eco.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/eco_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/eco/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/ECO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/ECO",
+    "keywords": "classification",
+    "abbreviation": "ECO"
+  },
+  {
+    "id-regex": "^GO:\\d{7}$",
+    "id-example": "0006915",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/14681407",
+      "https://www.ncbi.nlm.nih.gov/pubmed/10802651"
+    ],
+    "prefixes": [
+      {
+        "label": "go",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "GO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.ebi.ac.uk/QuickGO/",
+        "label": "QuickGO (Gene Ontology browser)",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/QuickGO/GTerm?id=$id"
+      },
+      {
+        "homepage": "http://amigo.geneontology.org/",
+        "label": "AmiGO 2",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://amigo.geneontology.org/amigo/term/$id"
+      },
+      {
+        "homepage": "http://www.informatics.jax.org/searches/GO_form.shtml",
+        "label": "GO Browser",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.informatics.jax.org/searches/GO.cgi?id=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/GO",
+        "label": "GO through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/GO/$id"
+      },
+      {
+        "homepage": "http://www.pantherdb.org/",
+        "label": "GO through PANTHER",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.pantherdb.org/panther/category.do?categoryAcc=$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/go",
+        "label": "GO through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/go/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://ep.ebi.ac.uk/EP/GO/",
+        "label": "EP:GO, Browser and analysis for Gene Ontology",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.bioinf.ebc.ee/EP/EP/GO/?Q=$id"
+      },
+      {
+        "homepage": "http://amigo2.berkeleybop.org/cgi-bin/amigo2/amigo/",
+        "label": "GO through Amigo2 (prototype)",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://amigo2.berkeleybop.org/cgi-bin/amigo2/amigo/term/$id"
+      }
+    ],
+    "description": "The Gene Ontology project provides a controlled vocabulary to describe gene and gene product attributes in any organism.",
+    "license": {
+      "url": "http://creativecommons.org/licenses/by/3.0/",
+      "label": "CC-BY",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": null,
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/go/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/GO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/go.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/go_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/go/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/GO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/GO",
+    "keywords": "ontology",
+    "abbreviation": "GO"
+  },
+  {
+    "id-regex": "^PATO:\\d{7}$",
+    "id-example": "0001998",
+    "references": [],
+    "prefixes": [
+      {
+        "label": "PATO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "pato",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/pato",
+        "label": "PATO through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/pato/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/PATO",
+        "label": "PATO through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/PATO/$id"
+      }
+    ],
+    "description": "PATO is an ontology of phenotypic qualities, intended for use in a number of applications, primarily defining composite phenotypes and phenotype  annotation.",
+    "license": {
+      "url": "http://creativecommons.org/licenses/by/3.0/",
+      "label": "CC-BY",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": "https://github.com/pato-ontology/pato/",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/pato/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/PATO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/pato.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/pato_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/pato/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/PATO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/PATO",
+    "keywords": [
+      "ontology",
+      "phenotype"
+    ],
+    "abbreviation": "PATO"
+  },
+  {
+    "id-regex": "^PO:\\d+$",
+    "id-example": "0009089",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/18194960"
+    ],
+    "prefixes": [
+      {
+        "label": "po",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "PO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.plantontology.org/",
+        "label": "Plant Ontology through Amigo",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.plantontology.org/amigo/go.cgi?view=details&query=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/PO",
+        "label": "Plant Ontology through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/PO/$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/po",
+        "label": "Plant Ontology through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/po/terms?obo_id=$id"
+      }
+    ],
+    "description": "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.",
+    "license": {
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "label": "CC-BY 4.0",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": "http://browser.planteome.org/amigo",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/po/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/PO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/po.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/po_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/po/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/PO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/PO",
+    "keywords": [
+      "ontology",
+      "plant"
+    ],
+    "abbreviation": "PO"
+  },
+  {
+    "id-regex": "^CL:\\d{7}$",
+    "id-example": "0000232",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/15693950"
+    ],
+    "prefixes": [
+      {
+        "label": "cl",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "CL",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/cl",
+        "label": "Cell Type Ontology through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/cl/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/CL",
+        "label": "Cell Type Ontology through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/CL/$id"
+      }
+    ],
+    "description": "The Cell Ontology is designed as a structured controlled vocabulary for cell types. The ontology was constructed for use by the model organism and other bioinformatics databases, incorporating cell types from prokaryotes to mammals, and includes plants and fungi.",
+    "license": {
+      "url": "http://creativecommons.org/licenses/by/3.0/",
+      "label": "CC-BY",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": null,
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/cl/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/CL",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/cl.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/cl_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/cl/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/CL_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/CL",
+    "keywords": "ontology",
+    "abbreviation": "CL"
+  },
+  {
+    "id-regex": "^C\\d+$",
+    "id-example": "80519",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/19789731"
+    ],
+    "prefixes": [
+      {
+        "label": "ncit",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "NCIT",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [],
+    "description": "NCI Thesaurus (NCIt) provides reference terminology covering vocabulary for clinical care, translational and basic research, and public information and administrative activities, providing a stable and unique identification code.",
+    "license": null,
+    "homepage": "https://github.com/NCI-Thesaurus/thesaurus-obo-edition",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/ncit/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/NCIT",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/ncit.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/ncit_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/ncit/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/NCIT_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/NCIT",
+    "keywords": [
+      "controlled vocabulary",
+      "ontology"
+    ],
+    "abbreviation": "NCIT"
+  },
+  {
+    "id-regex": "^CHEBI:\\d+$",
+    "id-example": "36927",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/19854951",
+      "https://www.ncbi.nlm.nih.gov/pubmed/19496059",
+      "https://www.ncbi.nlm.nih.gov/pubmed/17932057",
+      "https://www.ncbi.nlm.nih.gov/pubmed/22065232",
+      "https://www.ncbi.nlm.nih.gov/pubmed/23180789"
+    ],
+    "prefixes": [
+      {
+        "label": "chebi",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "CHEBI",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.ebi.ac.uk/chebi/",
+        "label": "ChEBI (Chemical Entities of Biological Interest)",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/chebi",
+        "label": "ChEBI through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/chebi/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/CHEBI",
+        "label": "ChEBI through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/CHEBI/$id"
+      }
+    ],
+    "description": "Chemical Entities of Biological Interest (ChEBI) is a freely available dictionary of molecular entities focused on 'small' chemical compounds.",
+    "license": null,
+    "homepage": "http://www.ebi.ac.uk/chebi",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/chebi/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/CHEBI",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/chebi.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/chebi_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/chebi/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/CHEBI_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/CHEBI",
+    "keywords": [
+      "chemical",
+      "metabolite",
+      "ontology"
+    ],
+    "abbreviation": "CHEBI"
+  },
+  {
+    "id-regex": "^ENVO:\\d{8}$",
+    "id-example": "09200010",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/27664130"
+    ],
+    "prefixes": [
+      {
+        "label": "envo",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "ENVO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/envo",
+        "label": "The Environment Ontology through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/envo/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://purl.bioontology.org/ontology/ENVO/",
+        "label": "The Environment Ontology through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/ENVO/$id"
+      }
+    ],
+    "description": "The Environment Ontology is a resource and research target for the semantically controlled description of environmental entities. The ontology's initial aim was the representation of the biomes, environmental features, and environmental materials pertinent to genomic and microbiome-related investigations.",
+    "license": {
+      "url": "http://creativecommons.org/licenses/by/3.0/",
+      "label": "CC-BY",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": "http://environmentontology.org/",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/envo/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/ENVO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/envo.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/envo_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/envo/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/ENVO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/ENVO",
+    "keywords": "ontology",
+    "abbreviation": "ENVO"
+  },
+  {
+    "id-regex": "^SO:\\d{7}$",
+    "id-example": "0000704",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/15892872"
+    ],
+    "prefixes": [
+      {
+        "label": "SO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "so",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.sequenceontology.org/",
+        "label": "Sequence Ontology",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.sequenceontology.org/miso/current_release/term/$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/SO",
+        "label": "Sequence Ontology through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/SO/$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/so",
+        "label": "Sequence Ontology through Ontology Lookup Service (OLS)",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/so/terms?obo_id=$id"
+      }
+    ],
+    "description": "The Sequence Ontology (SO) is a structured controlled vocabulary for the parts of a genomic annotation. It provides a common set of terms and definitions to facilitate the exchange, analysis and management of genomic data.",
+    "license": null,
+    "homepage": "https://github.com/The-Sequence-Ontology/SO-Ontologies",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/so/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/SO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/so.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/so_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/so/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/SO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/SO",
+    "keywords": [
+      "DNA",
+      "ontology"
+    ],
+    "abbreviation": "SO"
+  },
+  {
+    "id-regex": "^MAMO_\\d{7}$",
+    "id-example": "0000026",
+    "references": [],
+    "prefixes": [
+      {
+        "label": "MAMO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "mamo",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/MAMO",
+        "label": "MAMO through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://bioportal.bioontology.org/ontologies/MAMO/?p=classes&conceptid=http://identifiers.org/mamo/$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/mamo",
+        "label": "MaMO through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/mamo/terms?short_form=$id"
+      }
+    ],
+    "description": "The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.",
+    "license": {
+      "url": "http://opensource.org/licenses/Artistic-2.0",
+      "label": "Artistic License 2.0"
+    },
+    "homepage": "http://sourceforge.net/p/mamo-ontology/wiki/Home/",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/mamo/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/MAMO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/mamo.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/mamo_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/mamo/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/MAMO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/MAMO",
+    "keywords": null,
+    "abbreviation": "MAMO"
+  },
+  {
+    "id-regex": "^UBERON\\:\\d+$",
+    "id-example": "0008203",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/22293552"
+    ],
+    "prefixes": [
+      {
+        "label": "uberon",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "UBERON",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/UBERON",
+        "label": "UBERON through bioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/UBERON/$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/uberon",
+        "label": "UBERON through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/uberon/terms?obo_id=$id"
+      }
+    ],
+    "description": "Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data.",
+    "license": {
+      "url": "http://creativecommons.org/licenses/by/3.0/",
+      "label": "CC-BY",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": "http://uberon.org",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/uberon/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/UBERON",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/uberon.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/uberon_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/uberon/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/UBERON_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/UBERON",
+    "keywords": "ontology",
+    "abbreviation": "UBERON"
+  },
+  {
+    "id-regex": "^[A-Z_a-z]+$",
+    "id-example": null,
+    "references": [],
+    "prefixes": [
+      {
+        "label": "ADW",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "adw",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [],
+    "description": "Animal Diversity Web (ADW) is an online database of animal natural history, distribution, classification, and conservation biology.",
+    "license": null,
+    "homepage": "http://www.animaldiversity.org",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/adw/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/ADW",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": null,
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/adw_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/adw/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/ADW_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/ADW",
+    "keywords": "classification",
+    "abbreviation": "ADW"
+  },
+  {
+    "id-regex": "^\\w+$",
+    "id-example": null,
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/16428806"
+    ],
+    "prefixes": [
+      {
+        "label": "mo",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "MO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://bioportal.bioontology.org/",
+        "label": "MGED Ontology at BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/MO/$id"
+      },
+      {
+        "homepage": "http://mged.sourceforge.net/ontologies/MGEDontology.php",
+        "label": "MGED Ontology at SourceForge",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://mged.sourceforge.net/ontologies/MGEDontology.php#$id"
+      }
+    ],
+    "description": "The MGED Ontology (MO) provides terms for annotating all aspects of a microarray experiment from the design of the experiment and array layout, through to the preparation of the biological sample and the protocols used to hybridize the RNA and analyze the data.",
+    "license": null,
+    "homepage": "http://mged.sourceforge.net/ontologies/MGEDontology.php",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/mo/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/MO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": null,
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/mo_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/mo/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/MO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/MO",
+    "keywords": "ontology",
+    "abbreviation": "MO"
+  },
+  {
+    "id-regex": "^PW:\\d{7}$",
+    "id-example": "0000208",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/21478484"
+    ],
+    "prefixes": [
+      {
+        "label": "pw",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "PW",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://rgd.mcw.edu/rgdweb/ontology/search.html",
+        "label": "Pathway Ontology at Rat Genome Database",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://rgd.mcw.edu/rgdweb/ontology/annot.html?acc_id=$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/pw",
+        "label": "Pathway Ontology through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/pw/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/PW",
+        "label": "Pathway Ontology through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/PW/$id"
+      }
+    ],
+    "description": "The Pathway Ontology captures information on biological networks, the relationships between netweorks and the alterations or malfunctioning of such networks within a hierarchical structure. The five main branches of the ontology are: classic metabolic pathways, regulatory, signaling, drug, and disease pathwaysfor complex human conditions.",
+    "license": null,
+    "homepage": "http://rgd.mcw.edu/rgdweb/ontology/search.html",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/pw/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/PW",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/pw.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/pw_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/pw/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/PW_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/PW",
+    "keywords": [
+      "human",
+      "mammalian",
+      "ontology",
+      "pathway"
+    ],
+    "abbreviation": "PW"
+  },
+  {
+    "id-regex": "^MS:\\d{7}$",
+    "id-example": "1000001",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/23482073"
+    ],
+    "prefixes": [
+      {
+        "label": "MS",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "ms",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/ms",
+        "label": "Mass Spectrometry Controlled Vocabulary through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/ms/terms?obo_id=$id"
+      },
+      {
+        "homepage": "https://bioportal.bioontology.org/ontologies/MS",
+        "label": "Mass Spectrometry Controlled Vocabulary through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/MS/$id"
+      }
+    ],
+    "description": "The PSI-Mass Spectrometry (MS) CV contains all the terms used in the PSI MS-related data standards. The CV contains a logical hierarchical structure to ensure ease of maintenance and the development of software that makes use of complex semantics. The CV contains terms required for a complete description of an MS analysis pipeline used in proteomics, including sample labeling, digestion enzymes, instrumentation parts and parameters, software used for identification and quantification of peptides/proteins and the parameters and scores used to determine their significance.",
+    "license": {
+      "url": "https://creativecommons.org/licenses/by/3.0/",
+      "label": "CC-BY",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": "http://www.psidev.info/groups/controlled-vocabularies",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/ms/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/MS",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/ms.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/ms_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/ms/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/MS_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/MS",
+    "keywords": [
+      "controlled vocabulary",
+      "mass spectrometry"
+    ],
+    "abbreviation": "MS"
+  },
+  {
+    "id-regex": "^PR\\:\\d+$",
+    "id-example": "000000024",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/18047702"
+    ],
+    "prefixes": [
+      {
+        "label": "PR",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "pr",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://pir.georgetown.edu/pro/pro.shtml",
+        "label": "Protein Ontology at Georgetown",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=$id"
+      },
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/PR",
+        "label": "Protein Ontology through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/PR/$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/pr",
+        "label": "Protein Ontology through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/pr/terms?obo_id=$id"
+      }
+    ],
+    "description": "The PRotein Ontology (PRO) has been designed to describe the relationships of proteins and protein evolutionary classes, to delineate the multiple protein forms of a gene locus (ontology for protein forms), and to interconnect existing ontologies.",
+    "license": {
+      "url": "http://creativecommons.org/licenses/by/4.0/",
+      "label": "CC-BY",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": "http://proconsortium.org",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/pr/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/PR",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/pr.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/pr_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/pr/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/PR_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/PR",
+    "keywords": [
+      "ontology",
+      "protein"
+    ],
+    "abbreviation": "PR"
+  },
+  {
+    "id-regex": "^\\d{7}$",
+    "id-example": "0000030",
+    "references": [],
+    "prefixes": [
+      {
+        "label": "iao",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "IAO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [],
+    "description": "An ontology of information entities, originally driven by work by the Ontology of Biomedical Investigation (OBI) digital entity and realizable information entity branch.",
+    "license": {
+      "url": "http://creativecommons.org/licenses/by/3.0/",
+      "label": "CC-BY",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": "https://github.com/information-artifact-ontology/IAO/",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/iao/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/IAO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/iao.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/iao_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/iao/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/IAO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/IAO",
+    "keywords": null,
+    "abbreviation": "IAO"
+  },
+  {
+    "id-regex": "^RO_\\d+{7}$",
+    "id-example": "0002533",
+    "references": [
+      "https://www.ncbi.nlm.nih.gov/pubmed/15892874"
+    ],
+    "prefixes": [
+      {
+        "label": "RO",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      },
+      {
+        "label": "ro",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://obofoundry.org/ontology/ro.html",
+        "label": "OBO Relation Ontology through OntoBee",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.obolibrary.org/obo/$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/ro",
+        "label": "OBO Relation Ontology through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/ro/terms?short_form=$id"
+      },
+      {
+        "homepage": "http://www.obofoundry.org/ro/",
+        "label": "OBO Relation Ontology",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.obofoundry.org/ro/#$id"
+      }
+    ],
+    "description": "The OBO Relation Ontology provides consistent and unambiguous formal definitions of the relational expressions used in biomedical ontologies.",
+    "license": {
+      "url": "http://creativecommons.org/licenses/by/3.0/",
+      "label": "CC-BY",
+      "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
+    },
+    "homepage": "https://github.com/oborel/obo-relations/",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/ro/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/RO",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/ro.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/ro_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/ro/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/RO_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/RO",
+    "keywords": "ontology",
+    "abbreviation": "RO"
+  },
+  {
+    "id-regex": "^MA:\\d+$",
+    "id-example": "0002502",
+    "references": [],
+    "prefixes": [
+      {
+        "label": "ma",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          },
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "label": "MA",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "services": [
+      {
+        "homepage": "http://bioportal.bioontology.org/ontologies/MA",
+        "label": "Mouse Adult Gross Anatomy through BioPortal",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://purl.bioontology.org/ontology/MA/$id"
+      },
+      {
+        "homepage": "http://www.ebi.ac.uk/ols/ontologies/ma",
+        "label": "Mouse Adult Gross Anatomy through OLS",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.ebi.ac.uk/ols/ontologies/ma/terms?obo_id=$id"
+      },
+      {
+        "homepage": "http://www.informatics.jax.org/",
+        "label": "Mouse Adult Gross Anatomy at The Jackson Laboratory",
+        "organization": "",
+        "contentTypes": "",
+        "URIpattern": "http://www.informatics.jax.org/searches/AMA.cgi?id=$id"
+      }
+    ],
+    "description": "A structured controlled vocabulary of the adult anatomy of the mouse (Mus)",
+    "license": null,
+    "homepage": "https://github.com/obophenotype/mouse-anatomy-ontology",
+    "datasetIDs": [
+      {
+        "id": "http://identifiers.org/ma/",
+        "authority": {
+          "id": "org/id.org"
+        }
+      },
+      {
+        "id": "http://data.bioontology.org/ontologies/MA",
+        "authority": {
+          "id": "org/bioportal"
+        }
+      },
+      {
+        "id": "http://purl.obolibrary.org/obo/ma.owl",
+        "authority": {
+          "id": "org/obofoundry"
+        }
+      }
+    ],
+    "type": "http://data.bioontology.org/metadata/Ontology",
+    "URIpatterns": [
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/ma_${id}",
+        "usedBy": [
+          {
+            "id": "org/obofoundry"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://identifiers.org/ma/${id}",
+        "usedBy": [
+          {
+            "id": "org/id.org"
+          }
+        ]
+      },
+      {
+        "URIpattern": "http://purl.obolibrary.org/obo/MA_${id}",
+        "usedBy": [
+          {
+            "id": "org/bioportal"
+          }
+        ]
+      }
+    ],
+    "id": "pc/MA",
+    "keywords": "ontology",
+    "abbreviation": "MA"
+  }
+]
