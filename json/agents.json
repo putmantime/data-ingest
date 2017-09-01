@@ -1,0 +1,458 @@
+[
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/",
+    "label": "MGED Ontology at BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford University"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://mged.sourceforge.net/ontologies/MGEDontology.php",
+    "label": "MGED Ontology at SourceForge",
+    "institution": "(Ontology Working Group), European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/pato",
+    "label": "PATO through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/PATO",
+    "label": "PATO through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://pir.georgetown.edu/pro/pro.shtml",
+    "label": "Protein Ontology at Georgetown",
+    "institution": "Georgetown University Medical Center, Washington"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/PR",
+    "label": "Protein Ontology through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/pr",
+    "label": "Protein Ontology through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.sequenceontology.org/",
+    "label": "Sequence Ontology",
+    "institution": "Department of Molecular and Cellular Biology, University of California, Berkeley"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/SO",
+    "label": "Sequence Ontology through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/so",
+    "label": "Sequence Ontology through Ontology Lookup Service (OLS)",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/MA",
+    "label": "Mouse Adult Gross Anatomy through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/ma",
+    "label": "Mouse Adult Gross Anatomy through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.informatics.jax.org/",
+    "label": "Mouse Adult Gross Anatomy at The Jackson Laboratory",
+    "institution": "The Jackson Laboratory, Bar Harbor, Maine"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://ncit.nci.nih.gov/",
+    "label": "NCIt at National Cancer Institute",
+    "institution": "National Cancer Institute, Center for Bioinformatics, Maryland"
+  },
+  {
+    "id": "org/None",
+    "homepage": "https://www.ebi.ac.uk/ols/ontologies/omit/",
+    "label": "Ontology for miRNA Target (OMIT) through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://rgd.mcw.edu/rgdweb/ontology/search.html",
+    "label": "Pathway Ontology at Rat Genome Database",
+    "institution": "Medical College of Wisconsin, Wisconsin"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/pw",
+    "label": "Pathway Ontology through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/PW",
+    "label": "Pathway Ontology through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford, California"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/bto",
+    "label": "Brenda Tissue Ontology through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/BTO",
+    "label": "Brenda Tissue Ontology through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/cl",
+    "label": "Cell Type Ontology through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/CL",
+    "label": "Cell Type Ontology through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.variationontology.org/",
+    "label": "VariO at Lund University",
+    "institution": "Department of Experimental Medical Science, Lund University"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/VARIO",
+    "label": "VariO through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/vario",
+    "label": "VariO through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/QuickGO/",
+    "label": "QuickGO (Gene Ontology browser)",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://amigo.geneontology.org/",
+    "label": "AmiGO 2",
+    "institution": "The Gene Ontology Consortium"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.informatics.jax.org/searches/GO_form.shtml",
+    "label": "GO Browser",
+    "institution": "The Jackson Laboratory"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/GO",
+    "label": "GO through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.pantherdb.org/",
+    "label": "GO through PANTHER",
+    "institution": "Keck School of Medicine, University of Southern California"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/go",
+    "label": "GO through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://ep.ebi.ac.uk/EP/GO/",
+    "label": "EP:GO, Browser and analysis for Gene Ontology",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://amigo2.berkeleybop.org/cgi-bin/amigo2/amigo/",
+    "label": "GO through Amigo2 (prototype)",
+    "institution": "Berkeley Bioinformatics Open-source Projects, Lawrence Berkeley National Lab, Berkeley, California"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/fma/",
+    "label": "Foundational Model of Anatomy via Ontology Lookup Service (OLS)",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/FMA",
+    "label": "Foundational Model of Anatomy through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://animaldiversity.ummz.umich.edu/",
+    "label": "Animal Diversity Web at University of Michigan",
+    "institution": "University of Michigan Museum of Zoology, Ann Arbor, Michigan"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://obofoundry.org/ontology/ro.html",
+    "label": "OBO Relation Ontology through OntoBee",
+    "institution": "University of Michigan Medical School (MI), Lawrence Berkeley National Laboratory (CA) and Science Commons (MA)"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/ro",
+    "label": "OBO Relation Ontology through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.obofoundry.org/ro/",
+    "label": "OBO Relation Ontology",
+    "institution": "Institute for Formal Ontology and Medical Information Science, Saarbr\u00fccken"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/uo",
+    "label": "Unit Ontology via Ontology Lookup Service",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/UO",
+    "label": "Unit Ontology through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.plantontology.org/",
+    "label": "Plant Ontology through Amigo",
+    "institution": "Cold Spring Harbor Laboratory, Cold Spring Harbor, New York"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/PO",
+    "label": "Plant Ontology through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/po",
+    "label": "Plant Ontology through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/chebi/",
+    "label": "ChEBI (Chemical Entities of Biological Interest)",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/chebi",
+    "label": "ChEBI through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/CHEBI",
+    "label": "ChEBI through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/ms",
+    "label": "Mass Spectrometry Controlled Vocabulary through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "https://bioportal.bioontology.org/ontologies/MS",
+    "label": "Mass Spectrometry Controlled Vocabulary through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://human-phenotype-ontology.github.io/",
+    "label": "Human Phenotype Ontology at Institute for Medical Genetics and Human Genetics",
+    "institution": "Institute for Medical Genetics and Human Genetics, Charit\u00e9-Universit\u00e4tsmedizin, Berlin"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/hp",
+    "label": "Human Phenotype Ontology through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/envo",
+    "label": "The Environment Ontology through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://purl.bioontology.org/ontology/ENVO/",
+    "label": "The Environment Ontology through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.informatics.jax.org/",
+    "label": "Mammalian Phenotype Ontology at The Jackson Lab",
+    "institution": "The Jackson Laboratory, Bar Harbor, Maine"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/mp/",
+    "label": "Mammalian Phenotype Ontology through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "https://bioportal.bioontology.org/ontologies/MP",
+    "label": "Mammalian Phenotype Ontology through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/DOID",
+    "label": "Human Disease Ontology through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford University"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/doid",
+    "label": "Human Disease Ontology through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://disease-ontology.org/",
+    "label": "Human Disease Ontology at Northwestern University",
+    "institution": "University of Maryland (Maryland) and Northwestern University (Illinois)"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/sbo/",
+    "label": "SBO",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/sbo",
+    "label": "SBO through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/SBO",
+    "label": "SBO through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ontobee.org/",
+    "label": "OBI through Ontobee",
+    "institution": "University of Michigan Medical School (MI), awrence Berkeley National Laboratory (CA) and Science Commons (MA)"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/OBI",
+    "label": "Ontology for Biomedical Investigations through Bioportal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/obi",
+    "label": "OBI through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://obi-ontology.org/page/Main_Page",
+    "label": "OBI at MIT",
+    "institution": "Massachusetts Institute of Technology (MIT)"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ontobee.org/ontology/IAO",
+    "label": "IAO through Ontobee",
+    "institution": "University of Pennsylvania"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/eco",
+    "label": "Evidence Codes via the Ontology Lookup Service (OLS)",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/ECO",
+    "label": "Evidence Code Ontology through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/UBERON",
+    "label": "UBERON through bioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/uberon",
+    "label": "UBERON through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://archive.gramene.org/db/ontology/search_term?id=EO:0007359",
+    "label": "Plant Environment Ontology through Gramene",
+    "institution": "Cold Spring Harbor Laboratory, New York"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/PECO",
+    "label": "Plant Environment Ontology through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/eo",
+    "label": "Plant Environment Ontology through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://bioportal.bioontology.org/ontologies/MAMO",
+    "label": "MAMO through BioPortal",
+    "institution": "National Center for Biomedical Ontology, Stanford"
+  },
+  {
+    "id": "org/None",
+    "homepage": "http://www.ebi.ac.uk/ols/ontologies/mamo",
+    "label": "MaMO through OLS",
+    "institution": "European Bioinformatics Institute, Hinxton, Cambridge"
+  }
+]
