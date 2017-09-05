@@ -1,5 +1,6 @@
 import re
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
+
 
 __author__ = 'timputman'
 
@@ -19,20 +20,22 @@ class MergeRecords(object):
         self.obo = obo
         self.ido = ido
         self.biop = biop
-        self.merged_record = {
-            "id": 'pc/{}'.format(self.resource),
-            "id-regex": MergeRecords.key_check(key='@pattern', source=self.ido),
-            "id-example": self.generate_example_id(),
-            "abbreviation": self.resource,
-            "type": MergeRecords.key_check(key='@type', source=self.biop),
-            "homepage": MergeRecords.key_check(key='homepage', source=self.obo),
-            "description": MergeRecords.key_check(key='definition', source=self.ido),
-            "license": MergeRecords.key_check(key='license', source=self.obo),
-            "references": self.generate_references(),
-            "keywords": self.generate_keywords(),
-            "prefixes": self.generate_prefixes(),
-            "services": self.generate_services(),
-            "datasetIDs": [
+
+    def construct_merged_record(self):
+        merged_record = OrderedDict()
+        merged_record["id"] = 'pc/{}'.format(self.resource)
+        merged_record["id-regex"] = MergeRecords.key_check(key='@pattern', source=self.ido)
+        merged_record["id-example"] = self.generate_example_id()
+        merged_record["abbreviation"] = self.resource
+        merged_record["type"] = MergeRecords.key_check(key='@type', source=self.biop)
+        merged_record["homepage"] = MergeRecords.key_check(key='homepage', source=self.obo)
+        merged_record["description"] = MergeRecords.key_check(key='definition', source=self.ido)
+        merged_record["license"] = MergeRecords.key_check(key='license', source=self.obo)
+        merged_record["references"] = self.generate_references()
+        merged_record["keywords"] = self.generate_keywords()
+        merged_record["prefixes"] = self.generate_prefixes()
+        merged_record["services"] = self.generate_services()
+        merged_record['datasetIDs'] = [
                           {
                             "id": self.ido['uris']['uri'][1]['#text'],
                             "authority": {
@@ -51,8 +54,8 @@ class MergeRecords(object):
                               "id": "org/obofoundry"
                             }
                           }
-                        ],
-            "URIpatterns": [
+                        ]
+        merged_record['URIpatterns'] = [
                 {
                     "URIpattern": "http://purl.obolibrary.org/obo/%s_${id}" % (self.resource.lower()),
                     "usedBy": [
@@ -71,8 +74,8 @@ class MergeRecords(object):
                       {"id":"org/bioportal"}
                     ]
                 },
-            ],
-            }
+            ]
+        return merged_record
 
     def generate_references(self):
         ido_refs = MergeRecords.key_check(key='documentations', source=self.ido)

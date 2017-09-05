@@ -10,6 +10,7 @@ if len(sys.argv) == 0:
     options: ingest or agents
 
     """)
+    sys.exit()
 
 runtype = sys.argv[1].lower()
 
@@ -30,7 +31,8 @@ if runtype == 'ingest':
                                   obo=source_obj.obo_dict[database],
                                   ido=source_obj.ido_dict[database],
                                   biop=source_obj.biop_dict[database])
-            data.append(merged.merged_record)
+            data.append(merged.construct_merged_record())
+            pprint(merged.construct_merged_record())
         json.dump(data, outfile)
 
 if runtype == 'agents':
