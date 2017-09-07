@@ -161,30 +161,31 @@ class MergeRecords(object):
  
         for serv in servs:
             if not isinstance(serv, str):
-                dataEntry = serv['dataEntry']
-                prefixDelimeter = re.split(r'(\d+)', serv['dataEntityExample'])
-                serv_prefix = prefixDelimeter[0]
-                URIpattern = None
-                
-                if self.is_prefixed is True:
-                    exploded_url = dataEntry.split('$id')
-                    URIpattern = exploded_url[0] + serv_prefix + '$id'
-                else:
-                    URIpattern = serv['dataEntry']
-                    
-                ping_url = serv['dataEntry'].replace('$id', serv['dataEntityExample'])
-                status = MergeRecords.ping_service(ping_url)
-                if status == 404:
-                    self.ping_404.append({'URIpattern': URIpattern, 'URIexample': ping_url})
-                service_list.append(
-                    {
-                        "label":serv['dataInfo'],
-                        "homepage": serv['dataResource'],
-                        "organization": '', # agent id key, value pair onces it has been curated and mapped
-                        "URIpattern": URIpattern,
-                        "contentTypes": '' # don't have a programmatic source for these
-                    }
-                )
+                if '@obsolete' not in serv.keys():
+                    dataEntry = serv['dataEntry']
+                    prefixDelimeter = re.split(r'(\d+)', serv['dataEntityExample'])
+                    serv_prefix = prefixDelimeter[0]
+                    URIpattern = None
+
+                    if self.is_prefixed is True:
+                        exploded_url = dataEntry.split('$id')
+                        URIpattern = exploded_url[0] + serv_prefix + '$id'
+                    else:
+                        URIpattern = serv['dataEntry']
+
+                    ping_url = serv['dataEntry'].replace('$id', serv['dataEntityExample'])
+                    status = MergeRecords.ping_service(ping_url)
+                    if status == 404:
+                        self.ping_404.append({'URIpattern': URIpattern, 'URIexample': ping_url})
+                    service_list.append(
+                        {
+                            "label":serv['dataInfo'],
+                            "homepage": serv['dataResource'],
+                            "organization": '', # agent id key, value pair onces it has been curated and mapped
+                            "URIpattern": URIpattern,
+                            "contentTypes": '' # don't have a programmatic source for these
+                        }
+                    )
                 
         return service_list
 

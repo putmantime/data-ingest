@@ -1,0 +1,18 @@
+[
+  {
+    "URIexample": "http://purl.bioontology.org/ontology/MA/MA:0002502",
+    "URIpattern": "http://purl.bioontology.org/ontology/MA/MA:$id"
+  },
+  {
+    "URIexample": "http://purl.bioontology.org/ontology/SBO/SBO:0000262",
+    "URIpattern": "http://purl.bioontology.org/ontology/SBO/SBO:$id"
+  },
+  {
+    "URIexample": "http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR:000000024",
+    "URIpattern": "http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR:$id"
+  },
+  {
+    "URIexample": "http://compbio.charite.de/hpoweb/showterm?id=HP:0000118",
+    "URIpattern": "http://compbio.charite.de/hpoweb/showterm?id=HP:$id"
+  }
+]
