@@ -25,14 +25,13 @@ databases = source_obj.generate_names_list()
 if runtype == 'ingest':
     # Iterate through each source prefix and merge documents
     with open('pc_data.json', 'w') as outfile:
-        data = []
+        data = list()
         for database in databases:
             merged = MergeRecords(resource=database,
                                   obo=source_obj.obo_dict[database],
                                   ido=source_obj.ido_dict[database],
                                   biop=source_obj.biop_dict[database])
             data.append(merged.construct_merged_record())
-            pprint(merged.construct_merged_record())
         json.dump(data, outfile)
 
 if runtype == 'agents':
@@ -54,4 +53,15 @@ if runtype == 'agents':
         json.dump(data, outfile)
 
 
-
+if runtype == 'ping':
+    # Iterate through each source prefix and merge documents
+    with open('failed_pings.json', 'w') as outfile:
+        data = list()
+        for database in databases:
+            merged = MergeRecords(resource=database,
+                                  obo=source_obj.obo_dict[database],
+                                  ido=source_obj.ido_dict[database],
+                                  biop=source_obj.biop_dict[database])
+            record = merged.construct_merged_record()
+            data.extend(merged.ping_404)
+        json.dump(data, outfile)

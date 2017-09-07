@@ -1,6 +1,6 @@
 import re
 from collections import defaultdict, OrderedDict
-
+import requests
 
 __author__ = 'timputman'
 
@@ -20,21 +20,24 @@ class MergeRecords(object):
         self.obo = obo
         self.ido = ido
         self.biop = biop
+        self.is_prefixed = False
+        self.regex = self.generate_regex()
+        self.ping_404 = list()
 
     def construct_merged_record(self):
         merged_record = OrderedDict()
-        merged_record["id"] = 'pc/{}'.format(self.resource)
-        merged_record["id-regex"] = MergeRecords.key_check(key='@pattern', source=self.ido)
-        merged_record["id-example"] = self.generate_example_id()
+        merged_record["id"] = self.generate_pc_id()
+        merged_record["type"] = self.generate_type()
+        merged_record["label"] = self.generate_label()
         merged_record["abbreviation"] = self.resource
-        merged_record["type"] = MergeRecords.key_check(key='@type', source=self.biop)
-        merged_record["homepage"] = MergeRecords.key_check(key='homepage', source=self.obo)
-        merged_record["description"] = MergeRecords.key_check(key='definition', source=self.ido)
-        merged_record["license"] = MergeRecords.key_check(key='license', source=self.obo)
+        merged_record['homepage'] = self.generate_homepage()
+        merged_record["authority"] = None  # once agent ids are handcurated/minted and mapped to prefixes, this can be done
+        merged_record["license"] = self.generate_license()
+        merged_record["documentation"] = None # the exemplar record points to a help page on the go website, don't have a programatic way to determine this now
         merged_record["references"] = self.generate_references()
         merged_record["keywords"] = self.generate_keywords()
         merged_record["prefixes"] = self.generate_prefixes()
-        merged_record["services"] = self.generate_services()
+        merged_record["description"] = MergeRecords.key_check(key='definition', source=self.ido)
         merged_record['datasetIDs'] = [
                           {
                             "id": self.ido['uris']['uri'][1]['#text'],
@@ -55,6 +58,8 @@ class MergeRecords(object):
                             }
                           }
                         ]
+        merged_record["id-regex"] = self.regex
+        merged_record["id-example"] = self.generate_example_id()
         merged_record['URIpatterns'] = [
                 {
                     "URIpattern": "http://purl.obolibrary.org/obo/%s_${id}" % (self.resource.lower()),
@@ -75,19 +80,69 @@ class MergeRecords(object):
                     ]
                 },
             ]
+        merged_record["services"] = self.generate_services()
+
         return merged_record
+    
+    def generate_regex(self):
+        """
+        from regex, determine if prefixed, and which delimeter is used
+        """
+        ido_regex = MergeRecords.key_check(key='@pattern', source=self.ido)
+        if self.resource in ido_regex:
+            self.is_prefixed = True    
+        return ido_regex
+    
+    def generate_pc_id(self):
+        """
+        using the prefix as placeholder, will need to use numerical ids minted by PC eventually
+        """
+        return 'pc/{}'.format(self.resource)
+    
+    def generate_type(self):
+        """
+        bioportal seems to be the only resources that provides a type 
+        """
+        biop_type = MergeRecords.key_check(key='@type', source=self.biop)
+        return biop_type
+
+    def generate_label(self):
+        """
+        all three resources have labels, but many don't agree.
+        this method only returns the identifiers.org label for now
+        """
+        obo_label = MergeRecords.key_check(key='title', source=self.obo)
+        ido_label = MergeRecords.key_check(key='name', source=self.ido)
+        biop_label = MergeRecords.key_check(key='name', source=self.biop)
+        return ido_label
+    
+    def generate_license(self):
+        """
+        obofoundery seems to be the only resources that provides a license 
+        """
+        obo_license = MergeRecords.key_check(key='license', source=self.obo)
+        if obo_license is not None:
+            return obo_license['url']
+        else:
+            return obo_license
+    
+    def generate_homepage(self):
+        """
+        obofoundry has homepage for some records
+        """
+        return MergeRecords.key_check(key="homepage", source=self.obo)
 
     def generate_references(self):
+        """
+        
+        """
         ido_refs = MergeRecords.key_check(key='documentations', source=self.ido)
         pmids = []
         if ido_refs is not None:
-            if not isinstance(ido_refs['documentation'], list):
-                if ido_refs['documentation']['@type'] == 'PMID':
-                    pmids.append(ido_refs['documentation']['#text'])
-            else:
-                for ir in ido_refs['documentation']:
-                    if ir['@type'] == 'PMID':
-                        pmids.append(ir['#text'])
+            documentation = MergeRecords.normalize_to_list(ido_refs['documentation'])
+            for ir in documentation:
+                if ir['@type'] == 'PMID':
+                    pmids.append(ir['#text'])
         purls = ['https://www.ncbi.nlm.nih.gov/pubmed/{}'.format(x.split(':')[-1])
                  for x in pmids]
         return purls
@@ -101,21 +156,36 @@ class MergeRecords(object):
 
     def generate_services(self):
         service_ele = MergeRecords.key_check(key='resources', source=self.ido)
-        service_list = []
-        res = service_ele['resource']
-        if not isinstance(res, list):
-            res = list(res)
-        for re in res:
-            if not isinstance(re, str):
+        service_list = list()
+        servs = MergeRecords.normalize_to_list(service_ele['resource'])
+ 
+        for serv in servs:
+            if not isinstance(serv, str):
+                dataEntry = serv['dataEntry']
+                prefixDelimeter = re.split(r'(\d+)', serv['dataEntityExample'])
+                serv_prefix = prefixDelimeter[0]
+                URIpattern = None
+                
+                if self.is_prefixed is True:
+                    exploded_url = dataEntry.split('$id')
+                    URIpattern = exploded_url[0] + serv_prefix + '$id'
+                else:
+                    URIpattern = serv['dataEntry']
+                    
+                ping_url = serv['dataEntry'].replace('$id', serv['dataEntityExample'])
+                status = MergeRecords.ping_service(ping_url)
+                if status == 404:
+                    self.ping_404.append({'URIpattern': URIpattern, 'URIexample': ping_url})
                 service_list.append(
-                {
-                    "label":re['dataInfo'],
-                    "homepage": re['dataResource'],
-                    "organization": '',
-                    "URIpattern": re['dataEntry'],
-                    "contentTypes": ''
-                }
+                    {
+                        "label":serv['dataInfo'],
+                        "homepage": serv['dataResource'],
+                        "organization": '', # agent id key, value pair onces it has been curated and mapped
+                        "URIpattern": URIpattern,
+                        "contentTypes": '' # don't have a programmatic source for these
+                    }
                 )
+                
         return service_list
 
     def generate_prefixes(self):
@@ -205,4 +275,21 @@ class MergeRecords(object):
             return source[key]
         else:
             return None
+        
+    @staticmethod
+    def normalize_to_list(var):
+        record_list = list()
+        if not isinstance(var, list):
+            record_list.append(var)
+        else:
+            record_list.extend(var)
+        return record_list
+    
+    @staticmethod
+    def ping_service(url):
+        try:
+            r = requests.get(url, timeout=20)
+            return r.status_code
+        except Exception as e:
+            return 'TO'
 
